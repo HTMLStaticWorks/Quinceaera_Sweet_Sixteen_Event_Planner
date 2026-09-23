@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home 2 (Editorial & Production) — Luna & Lace Events</title>
+  <meta name="description"
+    content="A high-fashion, editorial milestone celebration planner specializing in modern Quinceañeras and Sweet Sixteens. Event production, concept design, and creative direction.">
+  <meta name="keywords"
+    content="fashion editorial quinceanera, sweet sixteen event production, event designer, luxury milestone birthday planner">
+
+  <meta property="og:title" content="Luna & Lace Events — Fashion Editorial & Event Production">
+  <meta property="og:description"
+    content="From first idea to final dance: A high-fashion celebration design studio for modern Quinceañeras and Sweet Sixteens.">
+  <meta property="og:image" content="assets/images/hero/hero-editorial.jpg">
+
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23380E2D'/><polygon points='50,15 61,38 85,38 66,54 73,78 50,63 27,78 34,54 15,38 39,38' fill='%23D4AF37'/></svg>">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Sticky Navbar -->
+  <header class="luna-navbar d-flex align-items-center">
+    <div class="container-fluid px-lg-5 d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="luna-brand">
+        <div class="luna-brand-emblem"><i class="bi bi-stars"></i></div>
+        <div class="luna-brand-text">
+          <span class="luna-brand-title">Luna & Lace</span>
+          <span class="luna-brand-subtitle">Events</span>
+        </div>
+      </a>
+
+      <nav class="d-none d-xl-flex align-items-center gap-1" aria-label="Main Navigation">
+        <ul class="navbar-nav flex-row align-items-center gap-1 list-unstyled mb-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Home</a>
+            <ul class="dropdown-menu luna-dropdown-menu">
+              <li><a class="dropdown-item" href="index.html"><i class="bi bi-house-heart"></i> Home (Classic Luxury)</a>
+              </li>
+              <li><a class="dropdown-item active" href="home-2.html"><i class="bi bi-camera-reels"></i> Home 2 (Fashion
+                  Editorial)</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="celebrations.html">Celebrations</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="vendors.html">Vendors</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <div class="d-flex align-items-center gap-2 gap-sm-3">
+        <button class="btn-theme-toggle d-none d-xl-inline-flex" aria-label="Toggle theme"><i class="bi bi-moon-stars-fill"></i></button>
+        <button class="btn-rtl-toggle d-none d-xl-inline-flex" aria-label="Toggle RTL layout" title="Toggle RTL Support">RTL</button>
+        <a href="signup.html" class="btn-celebration d-none d-xl-inline-flex">
+          <span>Sign Up</span> <i class="bi bi-arrow-right"></i>
+        </a>
+        <button class="navbar-toggler d-xl-none border-0 p-1" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#lunaMobileNav">
+          <i class="bi bi-list fs-1 text-primary"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Offcanvas Drawer -->
+  <div class="offcanvas offcanvas-end mobile-offcanvas" tabindex="-1" id="lunaMobileNav">
+    <div class="offcanvas-header border-bottom border-secondary border-opacity-10 py-3">
+      <div class="luna-brand">
+        <div class="luna-brand-emblem"><i class="bi bi-stars"></i></div>
+        <div class="luna-brand-text">
+          <span class="luna-brand-title fs-5">Luna & Lace</span>
+          <span class="luna-brand-subtitle">Events</span>
+        </div>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+      <div class="mobile-nav-list">
+        <div class="mb-2">
+          <a class="nav-link fw-bold d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+            href="#mobileHomeMenu2">
+            <span>Home</span> <i class="bi bi-chevron-down small"></i>
+          </a>
+          <div class="collapse show" id="mobileHomeMenu2">
+            <ul class="list-unstyled ps-3 pt-2">
+              <li class="mb-2"><a href="index.html" class="text-decoration-none text-secondary">Home (Classic Luxury)</a></li>
+              <li class="mb-2"><a href="home-2.html" class="text-decoration-none text-gold fw-semibold">Home 2 (Fashion Editorial)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-2"><a href="celebrations.html" class="nav-link fw-bold">Celebrations</a></div>
+        <div class="mb-2"><a href="packages.html" class="nav-link fw-bold">Packages</a></div>
+        <div class="mb-2"><a href="portfolio.html" class="nav-link fw-bold">Portfolio</a></div>
+        <div class="mb-2"><a href="vendors.html" class="nav-link fw-bold">Vendors</a></div>
+        <div class="mb-2"><a href="about.html" class="nav-link fw-bold">About</a></div>
+        <div class="mb-2"><a href="contact.html" class="nav-link fw-bold">Contact</a></div>
+        <div class="mb-2"><a href="dashboard.html" class="nav-link fw-bold">Dashboard</a></div>
+      </div>
+      <div class="pt-4 border-top border-secondary border-opacity-10">
+        <div class="d-flex align-items-center justify-content-between gap-2 mb-3">
+          <span class="text-secondary small fw-bold text-uppercase letter-spacing-1">Mode & Language</span>
+          <div class="d-flex align-items-center gap-2">
+            <button class="btn-theme-toggle" aria-label="Toggle light or dark theme" title="Toggle theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <button class="btn-rtl-toggle" aria-label="Toggle RTL layout" title="Toggle RTL Support">RTL</button>
+          </div>
+        </div>
+        <a href="signup.html" class="btn-celebration w-100"><span>Sign Up</span> <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       EDITORIAL ASYMMETRICAL HERO
+       ========================================================================= -->
+  <section class="editorial-hero-container bg-surface overflow-hidden">
+    <div class="container position-relative z-2">
+      <div class="row align-items-center g-5">
+
+        <!-- Left Editorial Copy -->
+        <div class="col-lg-6 hero-content">
+          <div class="eyebrow-badge">
+            <i class="bi bi-camera-reels"></i> Creative Direction & Production
+          </div>
+
+          <h1 class="display-1 fw-bold mb-4 font-serif">
+            A Celebration Designed Around Her
+          </h1>
+
+          <p class="lead text-secondary mb-4 pe-lg-4">
+            We treat milestone birthdays as couture artistic productions. Combining high-fashion aesthetics, theatrical
+            staging, and deeply personal storytelling, our production studio crafts celebrations that feel effortless,
+            youthful, and iconic.
+          </p>
+
+          <div
+            class="p-3 mb-4 rounded-4 bg-secondary-theme border border-secondary border-opacity-10 d-flex flex-wrap gap-4">
+            <div>
+              <small class="text-muted text-uppercase fw-semibold d-block">Specialization</small>
+              <strong class="text-burgundy">Quinceañera & Sweet 16</strong>
+            </div>
+            <div>
+              <small class="text-muted text-uppercase fw-semibold d-block">Aesthetic</small>
+              <strong class="text-burgundy">Fashion Editorial</strong>
+            </div>
+            <div>
+              <small class="text-muted text-uppercase fw-semibold d-block">Production Scope</small>
+              <strong class="text-burgundy">Turnkey Bespoke</strong>
+            </div>
+          </div>
+
+          <div class="d-flex flex-wrap align-items-center gap-3">
+            <a href="contact.html" class="btn-celebration btn-celebration-lg">
+              <span>Start Planning Her Event</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="portfolio.html" class="btn-celebration-outline btn-celebration-lg">
+              <span>Browse Editorial Lookbook</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Vertical Event Portrait Frame -->
+        <div class="col-lg-6">
+          <div class="editorial-portrait-frame">
+            <img src="assets/images/hero/hero-editorial.jpg" alt="Editorial milestone celebration portrait">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FEATURED CELEBRATION CASE STUDY: "FROM FIRST IDEA TO FINAL DANCE"
+       ========================================================================= -->
+  <section class="section-padding bg-secondary-theme">
+    <div class="container">
+      <div class="row align-items-end justify-content-between mb-5">
+        <div class="col-lg-7">
+          <div class="eyebrow-badge">
+            <i class="bi bi-stars"></i> Behind the Scenes Case Study
+          </div>
+          <h2 class="display-3 font-serif">From First Idea to Final Dance</h2>
+          <p class="lead">Walk through the chronological transformation of a real concept into an unforgettable ballroom
+            gala.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+          <span class="badge bg-surface text-secondary px-3 py-2 border">Production Timeline: 9 Months</span>
+        </div>
+      </div>
+
+      <!-- Horizontal Visual Story -->
+      <div class="row g-4 justify-content-center grid-2-col-1024">
+        <!-- Stage 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="bg-surface rounded-4 overflow-hidden border border-secondary border-opacity-10 h-100 shadow-sm">
+            <img src="assets/images/decor/decor-photowall.jpg" alt="Creative Moodboard Concept" class="w-100"
+              style="height: 220px; object-fit: cover;">
+            <div class="p-4">
+              <span class="text-gold fw-bold small text-uppercase letter-spacing-1 d-block mb-1">Phase 01 — Concept &
+                Moodboard</span>
+              <h4 class="font-serif mb-2">The Celestial Velvet Palette</h4>
+              <p class="text-secondary small mb-0">Translating Giselle's vision into deep plum velvet, champagne gold
+                geometric arches, and illuminated star patterns.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="bg-surface rounded-4 overflow-hidden border border-secondary border-opacity-10 h-100 shadow-sm">
+            <img src="assets/images/venues/venue-glasshouse.jpg" alt="Venue Architecture" class="w-100"
+              style="height: 220px; object-fit: cover;">
+            <div class="p-4">
+              <span class="text-gold fw-bold small text-uppercase letter-spacing-1 d-block mb-1">Phase 02 — Venue &
+                Architecture</span>
+              <h4 class="font-serif mb-2">The Glasshouse Transformation</h4>
+              <p class="text-secondary small mb-0">Securing an iconic conservatory with 30-foot glass ceilings, mapping
+                acoustic points, and establishing custom stage rigging.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="bg-surface rounded-4 overflow-hidden border border-secondary border-opacity-10 h-100 shadow-sm">
+            <img src="assets/images/decor/decor-arch.jpg" alt="Floral & Scenography" class="w-100"
+              style="height: 220px; object-fit: cover;">
+            <div class="p-4">
+              <span class="text-gold fw-bold small text-uppercase letter-spacing-1 d-block mb-1">Phase 03 — Scenography
+                & Decor</span>
+              <h4 class="font-serif mb-2">1,200 Fresh Bloom Installations</h4>
+              <p class="text-secondary small mb-0">Installing floral overhead chandeliers, velvet table runners, and
+                personalized acrylic monograms on charger plates.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="bg-surface rounded-4 overflow-hidden border border-secondary border-opacity-10 h-100 shadow-sm">
+            <img src="assets/images/quinceanera/quince-waltz.jpg" alt="Choreography Rehearsal" class="w-100"
+              style="height: 220px; object-fit: cover;">
+            <div class="p-4">
+              <span class="text-gold fw-bold small text-uppercase letter-spacing-1 d-block mb-1">Phase 04 — Rehearsal &
+                Court</span>
+              <h4 class="font-serif mb-2">Choreographed Grand Waltz</h4>
+              <p class="text-secondary small mb-0">Three structured studio sessions perfecting court of honor entrance
+                steps, lighting cues, and father-daughter transition.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="bg-surface rounded-4 overflow-hidden border border-secondary border-opacity-10 h-100 shadow-sm">
+            <img src="assets/images/sweet-sixteen/sweet16-dance.jpg" alt="Concert Entertainment" class="w-100"
+              style="height: 220px; object-fit: cover;">
+            <div class="p-4">
+              <span class="text-gold fw-bold small text-uppercase letter-spacing-1 d-block mb-1">Phase 05 — Concert
+                Production</span>
+              <h4 class="font-serif mb-2">Live Entertainment</h4>
+              <p class="text-secondary small mb-0">Festival-grade sound engineering, customized DJ remix sets, indoor
+                pyrotechnic spark fountains, and LED glow batons.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="bg-surface rounded-4 overflow-hidden border border-secondary border-opacity-10 h-100 shadow-sm">
+            <img src="assets/images/hero/hero-ballroom.jpg" alt="Final Celebration Gala" class="w-100"
+              style="height: 220px; object-fit: cover;">
+            <div class="p-4">
+              <span class="text-gold fw-bold small text-uppercase letter-spacing-1 d-block mb-1">Phase 06 — The Final
+                Celebration</span>
+              <h4 class="font-serif mb-2">A Night Preserved in Memory</h4>
+              <p class="text-secondary small mb-0">Flawless minute-by-minute execution by our on-site team while the
+                family immersed themselves fully in the celebration.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       THEMES & STYLES SELECTOR (8 Image-Based Cards)
+       ========================================================================= -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="eyebrow-badge">
+          <i class="bi bi-palette2"></i> Aesthetic Collections
+        </div>
+        <h2 class="display-3 font-serif">Themes & Design Directions</h2>
+        <p class="lead">Explore the visual atmospheres we design and build. Each style is fully customized to her
+          distinct personality.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. Modern Glam -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="themed-celebrations.html" class="theme-selector-card text-decoration-none d-block">
+            <img src="assets/images/sweet-sixteen/sweet16-glam.jpg" alt="Modern Glam Theme">
+            <div class="scrim">
+              <h5 class="text-white mb-0 font-serif">Modern Glam</h5>
+              <small class="text-gold">Neon, Mirror & Velvet</small>
+            </div>
+          </a>
+        </div>
+
+        <!-- 2. Garden Romance -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="themed-celebrations.html" class="theme-selector-card text-decoration-none d-block">
+            <img src="assets/images/decor/decor-arch.jpg" alt="Garden Romance Theme">
+            <div class="scrim">
+              <h5 class="text-white mb-0 font-serif">Garden Romance</h5>
+              <small class="text-gold">Blush Roses & Lanterns</small>
+            </div>
+          </a>
+        </div>
+
+        <!-- 3. Classic Elegance -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="themed-celebrations.html" class="theme-selector-card text-decoration-none d-block">
+            <img src="assets/images/venues/venue-ballroom.jpg" alt="Classic Elegance Theme">
+            <div class="scrim">
+              <h5 class="text-white mb-0 font-serif">Classic Elegance</h5>
+              <small class="text-gold">Crystal & Champagne</small>
+            </div>
+          </a>
+        </div>
+
+        <!-- 4. Black & Gold -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="themed-celebrations.html" class="theme-selector-card text-decoration-none d-block">
+            <img src="assets/images/tablescapes/table-luxe.jpg" alt="Black and Gold Theme">
+            <div class="scrim">
+              <h5 class="text-white mb-0 font-serif">Black & Gold</h5>
+              <small class="text-gold">Regal Metallic Contrast</small>
+            </div>
+          </a>
+        </div>
+
+        <!-- 5. Enchanted Garden -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="themed-celebrations.html" class="theme-selector-card text-decoration-none d-block">
+            <img src="assets/images/decor/decor-stage.jpg" alt="Enchanted Garden Theme">
+            <div class="scrim">
+              <h5 class="text-white mb-0 font-serif">Enchanted Garden</h5>
+              <small class="text-gold">Fairytale Greenery</small>
+            </div>
+          </a>
+        </div>
+
+        <!-- 6. Bold Color -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="themed-celebrations.html" class="theme-selector-card text-decoration-none d-block">
+            <img src="assets/images/quinceanera/quince-emerald.jpg" alt="Bold Color Theme">
+            <div class="scrim">
+              <h5 class="text-white mb-0 font-serif">Bold Emerald</h5>
+              <small class="text-gold">Jewel Toned Drama</small>
+            </div>
+          </a>
+        </div>
+
+        <!-- 7. Minimal Luxe -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="themed-celebrations.html" class="theme-selector-card text-decoration-none d-block">
+            <img src="assets/images/venues/venue-glasshouse.jpg" alt="Minimal Luxe Theme">
+            <div class="scrim">
+              <h5 class="text-white mb-0 font-serif">Minimal Luxe</h5>
+              <small class="text-gold">Modern Monochrome</small>
+            </div>
+          </a>
+        </div>
+
+        <!-- 8. Custom Concept -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="themed-celebrations.html" class="theme-selector-card text-decoration-none d-block">
+            <img src="assets/images/cakes/cake-5tier.jpg" alt="Custom Concept Theme">
+            <div class="scrim">
+              <h5 class="text-white mb-0 font-serif">Custom Concept</h5>
+              <small class="text-gold">Pure Bespoke Imagination</small>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       EDITORIAL PACKAGE COMPARISON
+       ========================================================================= -->
+  <section class="section-padding bg-secondary-theme">
+    <div class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-8">
+          <div class="eyebrow-badge"><i class="bi bi-sliders"></i> Tailored Engagement</div>
+          <h2 class="display-3 font-serif">Production Tier Overview</h2>
+          <p class="lead">Compare our three distinct production levels side by side.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a href="packages.html" class="btn-celebration-outline"><span>Full Package Matrix</span> <i
+              class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="table-responsive bg-surface rounded-4 p-4 p-xl-5 border border-secondary border-opacity-10 shadow-sm">
+        <table class="table table-borderless align-middle mb-0">
+          <thead>
+            <tr class="border-bottom border-secondary border-opacity-15">
+              <th scope="col" style="width: 34%;">Planning Service Focus</th>
+              <th scope="col" class="text-center" style="width: 22%;">
+                <h5 class="font-serif mb-0">The Essential</h5>
+                <small class="text-muted">$3,200 Demo</small>
+              </th>
+              <th scope="col" class="text-center bg-soft-blush rounded-top" style="width: 22%;">
+                <h5 class="font-serif text-burgundy mb-0">The Signature</h5>
+                <small class="text-gold fw-bold">$5,800 Demo</small>
+              </th>
+              <th scope="col" class="text-center" style="width: 22%;">
+                <h5 class="font-serif mb-0">Signature Experience</h5>
+                <small class="text-muted">$8,900 Demo</small>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-bottom border-secondary border-opacity-10">
+              <td class="fw-semibold">Design & Moodboard Consultation</td>
+              <td class="text-center text-muted">1 Review</td>
+              <td class="text-center bg-soft-blush text-burgundy fw-bold">Full 3D Renderings</td>
+              <td class="text-center">Custom Fabrication</td>
+            </tr>
+            <tr class="border-bottom border-secondary border-opacity-10">
+              <td class="fw-semibold">Court of Honor Rehearsals</td>
+              <td class="text-center">1 Session (2h)</td>
+              <td class="text-center bg-soft-blush text-burgundy fw-bold">2 Sessions (4h)</td>
+              <td class="text-center">Unlimited Direction</td>
+            </tr>
+            <tr class="border-bottom border-secondary border-opacity-10">
+              <td class="fw-semibold">Vendor Sourcing & Contracts</td>
+              <td class="text-center text-muted">Vendor Liaison</td>
+              <td class="text-center bg-soft-blush text-burgundy fw-bold">Full Curation & Negotiation</td>
+              <td class="text-center">Turnkey Management</td>
+            </tr>
+            <tr class="border-bottom border-secondary border-opacity-10">
+              <td class="fw-semibold">Event Day Producer Presence</td>
+              <td class="text-center">Up to 10 Hours</td>
+              <td class="text-center bg-soft-blush text-burgundy fw-bold">Up to 14 Hours</td>
+              <td class="text-center">Turnkey Multi-Day</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="text-center pt-4"><a href="package-details.html"
+                  class="btn btn-sm btn-outline-secondary rounded-pill px-3">Details</a></td>
+              <td class="text-center bg-soft-blush rounded-bottom pt-4"><a href="package-details.html"
+                  class="btn-celebration btn-celebration-sm">Select Signature</a></td>
+              <td class="text-center pt-4"><a href="package-details.html"
+                  class="btn btn-sm btn-outline-secondary rounded-pill px-3">Details</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       PLANNING ECOSYSTEM: VENDOR EXPERIENCE
+       ========================================================================= -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="eyebrow-badge">
+          <i class="bi bi-diagram-3"></i> Synchronized Production
+        </div>
+        <h2 class="display-3 font-serif">The Planning Ecosystem</h2>
+        <p class="lead">Luna & Lace serves as the master conductor, harmonizing every specialty vendor into a cohesive
+          artistic symphony.</p>
+      </div>
+
+      <div class="row g-3 text-center align-items-center justify-content-center">
+        <!-- Planner Hub -->
+        <div class="col-md-4 col-lg-2">
+          <div class="p-4 bg-plum text-white rounded-4 shadow-md h-100">
+            <i class="bi bi-star-fill text-gold fs-1 d-block mb-2"></i>
+            <h6 class="fw-bold mb-1">Lead Planner</h6>
+            <small class="text-white-50">Creative Producer & Conductor</small>
+          </div>
+        </div>
+        <div class="col-auto d-none d-lg-block text-gold fs-4"><i class="bi bi-arrow-right"></i></div>
+
+        <!-- Venue -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="p-3 bg-surface rounded-4 border border-secondary border-opacity-10 h-100 shadow-sm">
+            <i class="bi bi-building fs-2 text-burgundy d-block mb-1"></i>
+            <h6 class="fw-bold mb-1">Venue</h6>
+            <small class="text-muted">Rigging & Staging</small>
+          </div>
+        </div>
+
+        <!-- Decor -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="p-3 bg-surface rounded-4 border border-secondary border-opacity-10 h-100 shadow-sm">
+            <i class="bi bi-palette fs-2 text-burgundy d-block mb-1"></i>
+            <h6 class="fw-bold mb-1">Decor & Florals</h6>
+            <small class="text-muted">Lighting & Arches</small>
+          </div>
+        </div>
+
+        <!-- Entertainment -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="p-3 bg-surface rounded-4 border border-secondary border-opacity-10 h-100 shadow-sm">
+            <i class="bi bi-music-note-beamed fs-2 text-burgundy d-block mb-1"></i>
+            <h6 class="fw-bold mb-1">Entertainment</h6>
+            <small class="text-muted">DJ, Sound & FX</small>
+          </div>
+        </div>
+
+        <!-- Photography -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="p-3 bg-surface rounded-4 border border-secondary border-opacity-10 h-100 shadow-sm">
+            <i class="bi bi-camera fs-2 text-burgundy d-block mb-1"></i>
+            <h6 class="fw-bold mb-1">Media</h6>
+            <small class="text-muted">Cinema & Drone</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FINAL FEATURE CTA: "YOUR CELEBRATION SHOULD FEEL LIKE YOU"
+       ========================================================================= -->
+  <section class="section-padding bg-dark-accent text-white text-center position-relative">
+    <div class="container position-relative z-2 max-w-800 mx-auto">
+      <div class="eyebrow-badge border-gold text-gold mb-3">
+        <i class="bi bi-stars"></i> Make The Moment Unforgettable
+      </div>
+      <h2 class="display-2 font-serif text-white mb-4">Your Celebration Should Feel Like You.</h2>
+      <p class="lead text-white-50 mb-5 fs-5">
+        Let’s sit down, discuss your vision board, and build a milestone celebration that elevates her passions into
+        high art.
+      </p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="contact.html" class="btn-celebration btn-celebration-gold btn-celebration-lg">
+          <span>Start Planning</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="portfolio.html"
+          class="btn-celebration-outline btn-celebration-lg text-white border-white border-opacity-40">
+          <span class="text-white">Explore Case Studies</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="luna-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="luna-brand mb-3">
+            <div class="luna-brand-emblem"><i class="bi bi-stars"></i></div>
+            <div class="luna-brand-text">
+              <span class="luna-brand-title footer-brand-title">Luna & Lace</span>
+              <span class="luna-brand-subtitle">Events</span>
+            </div>
+          </div>
+          <p class="text-white-50 pe-lg-4 mb-4">
+            Bespoke Quinceañera and Sweet Sixteen event planning, decor production, and timeline management. “Make the
+            Moment Unforgettable.”
+          </p>
+          <div class="d-flex align-items-center">
+            <a href="contact.html" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-heading">Celebrations</h4>
+          <ul class="footer-links">
+            <li><a href="quinceaneras.html">Quinceañeras</a></li>
+            <li><a href="sweet-sixteens.html">Sweet Sixteens</a></li>
+            <li><a href="milestone-birthdays.html">Milestone Birthdays</a></li>
+            <li><a href="themed-celebrations.html">Themed Celebrations</a></li>
+            <li><a href="celebration-details.html">Celebration Details</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Explore Studio</h4>
+          <ul class="footer-links">
+            <li><a href="packages.html">Planning Packages</a></li>
+            <li><a href="package-details.html">Package Breakdown</a></li>
+            <li><a href="portfolio.html">Gallery & Case Studies</a></li>
+            <li><a href="vendors.html">Vendor Network</a></li>
+            <li><a href="about.html">About Luna & Lace</a></li>
+            <li><a href="dashboard.html">Client Dashboard</a></li>
+            <li><a href="coming-soon.html">VIP Gala Showcase</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Studio Inquiries</h4>
+          <p class="text-white-50 mb-2 small"><i class="bi bi-geo-alt-fill text-gold me-2"></i> 450 Celebration Blvd,
+            Suite 800</p>
+          <p class="text-white-50 mb-2 small"><i class="bi bi-envelope-fill text-gold me-2"></i>
+            hello@lunaandlaceevents.com</p>
+          <p class="text-white-50 mb-3 small"><i class="bi bi-telephone-fill text-gold me-2"></i> +1 (800) 586-2522</p>
+          <p class="text-white-50 small mb-0">
+            <strong>Studio Hours:</strong><br>
+            Monday – Saturday: 9:00 AM – 7:00 PM<br>
+            Sunday: By Consultation Appointment
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="mb-0">© 2026 Luna & Lace Events. All rights reserved.</p>
+        <div class="d-flex gap-3 small">
+          <a href="about.html" class="text-white-50 text-decoration-none">Privacy Policy</a>
+          <span>•</span>
+          <a href="about.html" class="text-white-50 text-decoration-none">Terms of Service</a>
+          <span>•</span>
+          <a href="about.html" class="text-white-50 text-decoration-none">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Scroll back to top"><i class="bi bi-chevron-up"></i></button>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

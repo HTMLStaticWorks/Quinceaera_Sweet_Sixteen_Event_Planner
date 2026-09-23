@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account — Luna & Lace Events</title>
+  <meta name="description" content="Create a client account demo for Luna & Lace Events celebration planning.">
+  <meta name="keywords" content="client registration demo, celebration planner signup">
+  
+  <meta property="og:title" content="Create Account — Luna & Lace Events">
+  <meta property="og:description" content="Front-end client registration demonstration.">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23380E2D'/><polygon points='50,15 61,38 85,38 66,54 73,78 50,63 27,78 34,54 15,38 39,38' fill='%23D4AF37'/></svg>">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 justify-content-center align-items-center py-5 position-relative auth-page bg-white">
+
+  <!-- Top Right Utility Controls (Theme Toggle & RTL) -->
+  <div class="position-fixed top-0 end-0 p-3 p-md-4 d-flex align-items-center gap-2 z-3">
+    <button class="btn-theme-toggle" aria-label="Toggle theme" title="Toggle theme"><i class="bi bi-moon-stars-fill"></i></button>
+    <button class="btn-rtl-toggle" aria-label="Toggle RTL layout" title="Toggle RTL Support">RTL</button>
+  </div>
+
+  <!-- Signup Main Container -->
+  <div class="container my-auto">
+    <div class="row justify-content-center">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        
+        <div class="form-card shadow-sm">
+          
+          <!-- Brand Logo & Name in Top Center of Box -->
+          <div class="text-center mb-4">
+            <a href="index.html" class="luna-brand justify-content-center mb-3">
+              <div class="luna-brand-emblem"><i class="bi bi-stars"></i></div>
+              <div class="luna-brand-text text-start">
+                <span class="luna-brand-title fs-4">Luna & Lace</span>
+                <span class="luna-brand-subtitle">Events</span>
+              </div>
+            </a>
+            <div class="eyebrow-badge mb-2"><i class="bi bi-person-plus"></i> New Client Registration</div>
+            <h2 class="font-serif mb-1">Create an Account</h2>
+            <p class="text-secondary small mb-0">Begin saving celebration inspiration, timelines, and planning notes.</p>
+          </div>
+
+          <!-- Demo Advisory Alert -->
+          <div id="signupDemoAlert" class="alert alert-success py-2 small d-none mb-4" role="alert">
+            <i class="bi bi-check-circle-fill me-1"></i> <strong>Account Created (Demo):</strong> In accordance with template specifications, this is a front-end UI demonstration with no live database.
+          </div>
+
+          <!-- Registration Form with Separate Fields -->
+          <form id="signupForm" class="needs-validation" novalidate>
+            
+            <!-- Separate Field: Full Name -->
+            <div class="mb-3">
+              <label for="signupName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="signupName" placeholder="e.g. David Reyes" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+
+            <!-- Separate Field: Email Address -->
+            <div class="mb-3">
+              <label for="signupEmail" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="signupEmail" placeholder="david@example.com" required>
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+
+            <!-- Separate Field: Phone Number -->
+            <div class="mb-3">
+              <label for="signupPhone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="signupPhone" placeholder="+1 (555) 000-0000" required>
+              <div class="invalid-feedback">Please enter your phone number.</div>
+            </div>
+
+            <!-- Separate Field: Password -->
+            <div class="mb-3">
+              <label for="signupPassword" class="form-label">Password</label>
+              <div class="password-toggle-wrapper">
+                <input type="password" class="form-control pe-5" id="signupPassword" placeholder="••••••••" required minlength="6">
+                <button type="button" class="password-toggle-btn" aria-label="Toggle password visibility">
+                  <i class="bi bi-eye-fill"></i>
+                </button>
+              </div>
+              <div class="invalid-feedback">Password must be at least 6 characters.</div>
+            </div>
+
+            <!-- Separate Field: Confirm Password -->
+            <div class="mb-3">
+              <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
+              <div class="password-toggle-wrapper">
+                <input type="password" class="form-control pe-5" id="signupConfirmPassword" placeholder="••••••••" required>
+                <button type="button" class="password-toggle-btn" aria-label="Toggle password visibility">
+                  <i class="bi bi-eye-fill"></i>
+                </button>
+              </div>
+              <div class="invalid-feedback">Passwords must match.</div>
+            </div>
+
+            <!-- Terms & Conditions Checkbox -->
+            <div class="form-check mb-4">
+              <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+              <label class="form-check-label small text-secondary" for="agreeTerms">
+                I agree to the <a href="about.html" class="text-burgundy">Terms of Service</a> & <a href="about.html" class="text-burgundy">Privacy Policy</a>
+              </label>
+              <div class="invalid-feedback">You must agree before submitting.</div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn-celebration w-100 mb-3">
+              <span>Create Account</span> <i class="bi bi-arrow-right"></i>
+            </button>
+
+            <!-- Social Logins (Google & Apple) -->
+            <div class="position-relative my-4 text-center">
+              <hr class="border-secondary opacity-15">
+              <span class="position-absolute top-50 start-50 translate-middle bg-surface px-3 small text-muted">or continue with</span>
+            </div>
+
+            <div class="d-flex justify-content-center gap-2 gap-sm-3 mb-4">
+              <button type="button" class="btn btn-outline-secondary rounded-pill d-inline-flex align-items-center justify-content-center gap-2 px-3 py-2 flex-grow-1" style="border-color: var(--border-medium);" aria-label="Continue with Google">
+                <i class="bi bi-google text-danger"></i> <span class="small fw-semibold">Google</span>
+              </button>
+              <button type="button" class="btn btn-outline-secondary rounded-pill d-inline-flex align-items-center justify-content-center gap-2 px-3 py-2 flex-grow-1" style="border-color: var(--border-medium);" aria-label="Continue with Apple">
+                <i class="bi bi-apple"></i> <span class="small fw-semibold">Apple</span>
+              </button>
+            </div>
+
+            <div class="text-center">
+              <p class="small text-secondary mb-0">
+                Already have an account? 
+                <a href="login.html" class="text-burgundy fw-bold text-decoration-none">Login</a>
+              </p>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

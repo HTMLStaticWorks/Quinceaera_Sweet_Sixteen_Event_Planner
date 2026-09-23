@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Installments — Client Dashboard — Luna & Lace Events</title>
+  <meta name="description" content="Private client portal milestone payment installments, invoicing, and receipts for Valentina Morales Royal Emerald Quinceañera Gala.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23380E2D'/><polygon points='50,15 61,38 85,38 66,54 73,78 50,63 27,78 34,54 15,38 39,38' fill='%23D4AF37'/></svg>">
+
+  <!-- Fonts & Local Stylesheets -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Mobile Header Bar (Screen < 992px) -->
+  <header class="dashboard-mobile-header">
+    <a href="index.html" class="luna-brand text-decoration-none">
+      <div class="luna-brand-emblem"><i class="bi bi-stars"></i></div>
+      <div class="luna-brand-text">
+        <span class="luna-brand-title">Luna & Lace</span>
+        <span class="luna-brand-subtitle">Events</span>
+      </div>
+    </a>
+    <button class="btn btn-outline-secondary p-2 rounded-3" type="button" id="dashboardSidebarToggle" aria-label="Toggle dashboard menu">
+      <i class="bi bi-list fs-4"></i>
+    </button>
+  </header>
+
+  <!-- =========================================================================
+       Dashboard Portal Wrapper (Sidebar + Main Content)
+       ========================================================================= -->
+  <div class="dashboard-wrapper">
+
+    <!-- =========================================================================
+         Left Side Menu (Top to Bottom of Page)
+         ========================================================================= -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+      
+      <!-- Top: Brand in Same Position (Top-Left of page) -->
+      <div class="dashboard-sidebar-header">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="index.html" class="luna-brand text-decoration-none">
+            <div class="luna-brand-emblem"><i class="bi bi-stars"></i></div>
+            <div class="luna-brand-text">
+              <span class="luna-brand-title">Luna & Lace</span>
+              <span class="luna-brand-subtitle">Events</span>
+            </div>
+          </a>
+          <button type="button" class="btn-close dashboard-sidebar-close-btn" id="dashboardSidebarClose" aria-label="Close sidebar"></button>
+        </div>
+        <div class="dashboard-portal-tag mt-3 d-flex align-items-center justify-content-between">
+          <span class="badge bg-gold text-dark fw-bold"><i class="bi bi-shield-lock-fill me-1"></i> Client Portal</span>
+          <span class="small text-secondary fw-semibold">#LL-2026-89</span>
+        </div>
+      </div>
+
+      <!-- Center: Side Menu Navigation -->
+      <div class="dashboard-sidebar-body py-4">
+        <div class="sidebar-section-title text-uppercase text-muted fw-bold px-3 mb-2">Celebration Menu</div>
+        <nav class="dashboard-sidebar-nav" aria-label="Dashboard Side Menu">
+          <ul class="list-unstyled mb-0 d-flex flex-column gap-1">
+            <li>
+              <a href="dashboard.html" class="dashboard-sidebar-link">
+                <i class="bi bi-check2-square"></i>
+                <span>Planning Checklist</span>
+              </a>
+            </li>
+            <li>
+              <a href="dashboard-vendors.html" class="dashboard-sidebar-link">
+                <i class="bi bi-people"></i>
+                <span>Vendor Bookings</span>
+              </a>
+            </li>
+            <li>
+              <a href="dashboard-budget.html" class="dashboard-sidebar-link">
+                <i class="bi bi-pie-chart"></i>
+                <span>Budget Breakdown</span>
+              </a>
+            </li>
+            <li>
+              <a href="dashboard-timeline.html" class="dashboard-sidebar-link">
+                <i class="bi bi-clock-history"></i>
+                <span>Day-Of Itinerary</span>
+              </a>
+            </li>
+            <li>
+              <a href="dashboard-payments.html" class="dashboard-sidebar-link active">
+                <i class="bi bi-credit-card-2-front"></i>
+                <span>Payment Installments</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Mini Client Summary Card inside Sidebar -->
+        <div class="sidebar-client-widget mt-4 p-3 rounded-3 bg-secondary-theme border border-secondary border-opacity-10">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <img src="assets/images/portraits/portrait-2.jpg" alt="Valentina Morales" class="rounded-circle" style="width: 38px; height: 38px; object-fit: cover; border: 2px solid var(--gold-accent);">
+            <div class="overflow-hidden">
+              <strong class="d-block text-truncate small">Valentina Morales</strong>
+              <small class="text-secondary d-block text-truncate" style="font-size: 0.75rem;">Nov 14, 2026 Gala</small>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center pt-2 border-top border-secondary border-opacity-10 small">
+            <span class="text-secondary">Progress</span>
+            <span class="fw-bold text-emerald">78%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom: Utility Controls & Logout Button -->
+      <div class="dashboard-sidebar-footer pt-3 border-top border-secondary border-opacity-10">
+        <div class="d-flex align-items-center justify-content-between mb-3 px-1">
+          <span class="small text-secondary fw-semibold">Appearance</span>
+          <div class="d-flex align-items-center gap-2">
+            <button class="btn-theme-toggle" aria-label="Toggle theme" title="Toggle theme"><i class="bi bi-moon-stars-fill"></i></button>
+            <button class="btn-rtl-toggle" aria-label="Toggle RTL layout" title="Toggle RTL Support">RTL</button>
+          </div>
+        </div>
+        <a href="login.html" class="dashboard-sidebar-logout">
+          <i class="bi bi-box-arrow-right"></i>
+          <span>Logout</span>
+        </a>
+      </div>
+
+    </aside>
+
+    <!-- Sidebar Backdrop for Mobile Screens -->
+    <div class="dashboard-sidebar-backdrop" id="dashboardSidebarBackdrop"></div>
+
+    <!-- =========================================================================
+         Main Content Area (Payment Installments)
+         ========================================================================= -->
+    <main class="dashboard-main">
+      <div class="dashboard-content-body">
+        
+        <!-- Client Dashboard Header & Profile Hero -->
+        <div class="dashboard-hero-card p-4 p-lg-5 mb-5">
+          <div class="row align-items-center g-4">
+            
+            <!-- Client Avatar & Title -->
+            <div class="col-lg-7">
+              <div class="d-flex flex-column flex-sm-row align-items-sm-center gap-3 mb-3">
+                <img src="assets/images/portraits/portrait-2.jpg" alt="Valentina Morales Quinceañera Portrait" class="dashboard-client-avatar">
+                <div>
+                  <div class="d-flex align-items-center gap-2 mb-1 flex-wrap">
+                    <span class="badge bg-gold text-dark fw-bold">Private Client Portal</span>
+                    <span class="status-badge-confirmed"><i class="bi bi-shield-check"></i> Active Celebration File #LL-2026-89</span>
+                  </div>
+                  <h1 class="font-serif dashboard-hero-title mb-1">Valentina Morales & Family</h1>
+                  <p class="text-secondary mb-0 small">
+                    <i class="bi bi-gem text-gold me-1"></i> <strong>Royal Emerald Quinceañera Gala</strong> • November 14, 2026 • The Grand Venetian Ballroom, Miami
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Lead Planner Card -->
+            <div class="col-lg-5">
+              <div class="p-3 bg-surface rounded-4 border border-secondary border-opacity-10 d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="luna-brand-emblem" style="width: 44px; height: 44px; font-size: 1rem;">
+                    <i class="bi bi-person-heart"></i>
+                  </div>
+                  <div>
+                    <small class="text-muted d-block">Senior Celebration Producer</small>
+                    <strong class="d-block text-primary">Elena Rostova</strong>
+                    <small class="text-secondary">Direct: +1 (800) 586-2522 ext. 4</small>
+                  </div>
+                </div>
+                <a href="contact.html" class="btn btn-outline-secondary btn-sm rounded-pill px-3">
+                  <i class="bi bi-chat-dots me-1"></i> Message
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Key Metrics Strip -->
+          <hr class="border-secondary opacity-15 my-4">
+          <div class="row g-3 text-center text-sm-start">
+            <div class="col-6 col-md-3">
+              <small class="text-muted d-block mb-1">Countdown</small>
+              <div class="display-6 font-serif text-burgundy fw-bold">142 Days</div>
+              <small class="text-secondary">Target: Nov 14, 2026</small>
+            </div>
+            <div class="col-6 col-md-3">
+              <small class="text-muted d-block mb-1">Planning Progress</small>
+              <div class="display-6 font-serif text-emerald fw-bold" id="overallMilestoneProgress">78%</div>
+              <small class="text-secondary" id="checklistCompletedCount">14 of 18 Milestones Done</small>
+            </div>
+            <div class="col-6 col-md-3">
+              <small class="text-muted d-block mb-1">Total Approved Budget</small>
+              <div class="display-6 font-serif text-primary fw-bold">$55,000</div>
+              <small class="text-emerald">$10,750 Available</small>
+            </div>
+            <div class="col-6 col-md-3">
+              <small class="text-muted d-block mb-1">Confirmed Guests</small>
+              <div class="display-6 font-serif text-gold fw-bold">220 RSVP</div>
+              <small class="text-secondary">Capacity: 250 Max</small>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- MODULE 5: Payment Installments Manager -->
+        <section id="payments">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
+            <div>
+              <div class="eyebrow-badge"><i class="bi bi-receipt"></i> Payment Schedule</div>
+              <h2 class="font-serif display-4 mb-1">Payment Installments Manager</h2>
+              <p class="text-secondary mb-0">Milestone installment payment breakdown, invoicing, and verified receipts.</p>
+            </div>
+            <div>
+              <button class="btn btn-celebration btn-celebration-sm" onclick="alert('Demo Client Portal: In a live production deployment, this opens your integrated Stripe / ACH secure payment gateway.');">
+                <i class="bi bi-credit-card me-1"></i> Make Payment
+              </button>
+            </div>
+          </div>
+
+          <!-- Installments Schedule Cards -->
+          <div class="row g-4 justify-content-center grid-2-col-1024">
+            
+            <!-- Installment 1 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card p-4 bg-surface border border-secondary border-opacity-10 rounded-4 h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-light text-muted">Installment #1</span>
+                    <span class="status-badge-paid"><i class="bi bi-check2"></i> Paid</span>
+                  </div>
+                  <h5 class="font-serif mb-1">Initial Deposit (25%)</h5>
+                  <p class="small text-muted mb-3">Secured Date & Master Planning</p>
+                  <div class="display-6 font-serif text-burgundy fw-bold mb-2">$13,750</div>
+                  <ul class="list-unstyled small text-secondary mb-0">
+                    <li><strong>Due Date:</strong> Jan 15, 2026</li>
+                    <li><strong>Paid On:</strong> Jan 14, 2026</li>
+                    <li><strong>Method:</strong> Wire Transfer (*4901)</li>
+                    <li><strong>Invoice:</strong> #LL-INV-8921</li>
+                  </ul>
+                </div>
+                <div class="pt-3 mt-3 border-top border-secondary border-opacity-10">
+                  <button class="btn btn-sm btn-outline-secondary w-100 rounded-pill" onclick="alert('Downloading Receipt #LL-INV-8921 for $13,750.00 (Demo PDF)');">
+                    <i class="bi bi-download me-1"></i> View Receipt
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Installment 2 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card p-4 bg-surface border border-secondary border-opacity-10 rounded-4 h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-light text-muted">Installment #2</span>
+                    <span class="status-badge-paid"><i class="bi bi-check2"></i> Paid</span>
+                  </div>
+                  <h5 class="font-serif mb-1">Midterm Production (35%)</h5>
+                  <p class="small text-muted mb-3">Venetian Ballroom & Scenography</p>
+                  <div class="display-6 font-serif text-burgundy fw-bold mb-2">$19,250</div>
+                  <ul class="list-unstyled small text-secondary mb-0">
+                    <li><strong>Due Date:</strong> May 15, 2026</li>
+                    <li><strong>Paid On:</strong> May 12, 2026</li>
+                    <li><strong>Method:</strong> Amex (*8820)</li>
+                    <li><strong>Invoice:</strong> #LL-INV-9044</li>
+                  </ul>
+                </div>
+                <div class="pt-3 mt-3 border-top border-secondary border-opacity-10">
+                  <button class="btn btn-sm btn-outline-secondary w-100 rounded-pill" onclick="alert('Downloading Receipt #LL-INV-9044 for $19,250.00 (Demo PDF)');">
+                    <i class="bi bi-download me-1"></i> View Receipt
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Installment 3 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card p-4 bg-surface border-2 border-burgundy rounded-4 h-100 d-flex flex-column justify-content-between shadow-sm position-relative">
+                <span class="badge bg-burgundy text-white position-absolute top-0 end-0 m-3">Current Due</span>
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-light text-muted">Installment #3</span>
+                    <span class="status-badge-due">Due in 20 Days</span>
+                  </div>
+                  <h5 class="font-serif mb-1">60-Day Balance (25%)</h5>
+                  <p class="small text-muted mb-3">Florals, DJ & Production Rigs</p>
+                  <div class="display-6 font-serif text-burgundy fw-bold mb-2">$13,750</div>
+                  <ul class="list-unstyled small text-secondary mb-0">
+                    <li><strong>Due Date:</strong> Oct 14, 2026</li>
+                    <li><strong>Status:</strong> Invoice Dispatched</li>
+                    <li><strong>Invoice:</strong> #LL-INV-9218</li>
+                    <li><strong>Grace Period:</strong> 5 Days</li>
+                  </ul>
+                </div>
+                <div class="pt-3 mt-3 border-top border-secondary border-opacity-10">
+                  <button class="btn btn-celebration btn-celebration-sm w-100" onclick="alert('Processing Demo Payment of $13,750 for Invoice #LL-INV-9218. Payment simulation successful!');">
+                    <span>Pay Now</span> <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Installment 4 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card p-4 bg-surface border border-secondary border-opacity-10 rounded-4 h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-light text-muted">Installment #4</span>
+                    <span class="badge bg-secondary">Scheduled</span>
+                  </div>
+                  <h5 class="font-serif mb-1">Final Settlement (15%)</h5>
+                  <p class="small text-muted mb-3">Day-Of Coordination & Closing</p>
+                  <div class="display-6 font-serif text-burgundy fw-bold mb-2">$8,250</div>
+                  <ul class="list-unstyled small text-secondary mb-0">
+                    <li><strong>Due Date:</strong> Nov 10, 2026</li>
+                    <li><strong>Status:</strong> Scheduled Auto-Draw</li>
+                    <li><strong>Invoice:</strong> #LL-INV-9390</li>
+                    <li><strong>Includes:</strong> Gratuity options</li>
+                  </ul>
+                </div>
+                <div class="pt-3 mt-3 border-top border-secondary border-opacity-10">
+                  <button class="btn btn-sm btn-outline-secondary w-100 rounded-pill" disabled>
+                    Scheduled
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Dashboard Footer Bar -->
+      <footer class="dashboard-content-footer d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 small text-secondary">
+        <div>
+          <span>© 2026 Luna & Lace Events • Private Client Portal • Valentina Morales Gala</span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="contact.html" class="text-secondary text-decoration-none">Producer Elena Rostova</a>
+          <span>•</span>
+          <a href="about.html" class="text-secondary text-decoration-none">Terms & Privacy</a>
+        </div>
+      </footer>
+    </main>
+
+  </div>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" aria-label="Scroll back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

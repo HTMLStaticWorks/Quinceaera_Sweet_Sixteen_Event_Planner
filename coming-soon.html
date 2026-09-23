@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIP Gala Showcase (Coming Soon) — Luna & Lace Events</title>
+  <meta name="description" content="Our annual Quinceañera & Sweet Sixteen Couture Gala Showcase is arriving soon. Sign up for early VIP access and invitation drops.">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23380E2D'/><polygon points='50,15 61,38 85,38 66,54 73,78 50,63 27,78 34,54 15,38 39,38' fill='%23D4AF37'/></svg>">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 justify-content-between position-relative overflow-x-hidden">
+
+  <!-- Background Scrim -->
+  <div class="position-absolute inset-0 w-100 h-100 z-n1" style="background: radial-gradient(circle at 50% 30%, rgba(110, 24, 47, 0.25) 0%, rgba(18, 9, 20, 0.95) 100%), url('assets/images/hero/hero-ballroom.jpg') center/cover no-repeat; filter: saturate(1.2);"></div>
+
+  <!-- Header -->
+  <header class="py-4 position-relative z-2">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="luna-brand">
+        <div class="luna-brand-emblem"><i class="bi bi-stars"></i></div>
+        <div class="luna-brand-text">
+          <span class="luna-brand-title footer-brand-title">Luna & Lace</span>
+          <span class="luna-brand-subtitle">Events</span>
+        </div>
+      </a>
+      <div class="d-flex align-items-center gap-3">
+        <button class="btn-theme-toggle" aria-label="Toggle theme"><i class="bi bi-moon-stars-fill"></i></button>
+        <button class="btn-rtl-toggle" aria-label="Toggle RTL layout" title="Toggle RTL Support">RTL</button>
+        <a href="contact.html" class="btn-celebration btn-celebration-sm">Contact Studio</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Countdown Content -->
+  <main class="my-auto py-5 text-center text-white position-relative z-2">
+    <div class="container max-w-800 mx-auto">
+      
+      <div class="eyebrow-badge border-gold text-gold mb-3">
+        <i class="bi bi-stars"></i> Exclusive Preview Showcase
+      </div>
+
+      <h1 class="display-2 font-serif text-white mb-3">
+        Something Breathtaking is Coming.
+      </h1>
+
+      <p class="lead text-white-50 mb-5 fs-5">
+        We are preparing our 2027 Couture Quinceañera & Sweet Sixteen Scenography Collection. Featuring high-fashion ballroom staging, bespoke dress fittings, and curated vendor previews.
+      </p>
+
+      <!-- Live Ticking Countdown Timer -->
+      <div id="countdownTimer" class="d-flex justify-content-center gap-3 gap-md-4 mb-5">
+        <div class="p-3 p-md-4 rounded-4 bg-white bg-opacity-10 backdrop-blur border border-white border-opacity-20" style="min-width: 90px;">
+          <span id="countdownDays" class="display-4 font-serif fw-bold text-gold d-block">150</span>
+          <small class="text-uppercase letter-spacing-1 text-white-50 small">Days</small>
+        </div>
+        <div class="p-3 p-md-4 rounded-4 bg-white bg-opacity-10 backdrop-blur border border-white border-opacity-20" style="min-width: 90px;">
+          <span id="countdownHours" class="display-4 font-serif fw-bold text-gold d-block">08</span>
+          <small class="text-uppercase letter-spacing-1 text-white-50 small">Hours</small>
+        </div>
+        <div class="p-3 p-md-4 rounded-4 bg-white bg-opacity-10 backdrop-blur border border-white border-opacity-20" style="min-width: 90px;">
+          <span id="countdownMinutes" class="display-4 font-serif fw-bold text-gold d-block">45</span>
+          <small class="text-uppercase letter-spacing-1 text-white-50 small">Minutes</small>
+        </div>
+        <div class="p-3 p-md-4 rounded-4 bg-white bg-opacity-10 backdrop-blur border border-white border-opacity-20" style="min-width: 90px;">
+          <span id="countdownSeconds" class="display-4 font-serif fw-bold text-gold d-block">20</span>
+          <small class="text-uppercase letter-spacing-1 text-white-50 small">Seconds</small>
+        </div>
+      </div>
+
+      <!-- Email Notification Subscription -->
+      <div class="max-w-500 mx-auto">
+        <form onsubmit="event.preventDefault(); document.getElementById('comingSoonNotice').classList.remove('d-none'); this.style.display='none';">
+          <div class="input-group input-group-lg shadow-lg">
+            <input type="email" class="form-control rounded-start-pill bg-white text-dark" placeholder="Enter your email for VIP invitations..." required>
+            <button class="btn btn-celebration rounded-end-pill px-4" type="submit">
+              <span>Notify Me</span> <i class="bi bi-bell-fill"></i>
+            </button>
+          </div>
+        </form>
+
+        <div id="comingSoonNotice" class="alert alert-success d-none mt-3 py-2 small" role="alert">
+          <i class="bi bi-check-circle-fill me-1"></i> You're on the list! We will send you VIP showcase early invitations.
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <a href="index.html" class="text-white-50 text-decoration-none small">
+          <i class="bi bi-arrow-left me-1"></i> Return to Main Website
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-3 text-center small text-white-50 position-relative z-2">
+    <div class="container">
+      <p class="mb-0">© 2026 Luna & Lace Events. “Make the Moment Unforgettable.”</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

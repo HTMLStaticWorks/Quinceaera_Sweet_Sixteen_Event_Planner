@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day-Of Itinerary — Client Dashboard — Luna & Lace Events</title>
+  <meta name="description" content="Private client portal day-of minute-by-minute execution timeline for Valentina Morales Royal Emerald Quinceañera Gala.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23380E2D'/><polygon points='50,15 61,38 85,38 66,54 73,78 50,63 27,78 34,54 15,38 39,38' fill='%23D4AF37'/></svg>">
+
+  <!-- Fonts & Local Stylesheets -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Mobile Header Bar (Screen < 992px) -->
+  <header class="dashboard-mobile-header">
+    <a href="index.html" class="luna-brand text-decoration-none">
+      <div class="luna-brand-emblem"><i class="bi bi-stars"></i></div>
+      <div class="luna-brand-text">
+        <span class="luna-brand-title">Luna & Lace</span>
+        <span class="luna-brand-subtitle">Events</span>
+      </div>
+    </a>
+    <button class="btn btn-outline-secondary p-2 rounded-3" type="button" id="dashboardSidebarToggle" aria-label="Toggle dashboard menu">
+      <i class="bi bi-list fs-4"></i>
+    </button>
+  </header>
+
+  <!-- =========================================================================
+       Dashboard Portal Wrapper (Sidebar + Main Content)
+       ========================================================================= -->
+  <div class="dashboard-wrapper">
+
+    <!-- =========================================================================
+         Left Side Menu (Top to Bottom of Page)
+         ========================================================================= -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+      
+      <!-- Top: Brand in Same Position (Top-Left of page) -->
+      <div class="dashboard-sidebar-header">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="index.html" class="luna-brand text-decoration-none">
+            <div class="luna-brand-emblem"><i class="bi bi-stars"></i></div>
+            <div class="luna-brand-text">
+              <span class="luna-brand-title">Luna & Lace</span>
+              <span class="luna-brand-subtitle">Events</span>
+            </div>
+          </a>
+          <button type="button" class="btn-close dashboard-sidebar-close-btn" id="dashboardSidebarClose" aria-label="Close sidebar"></button>
+        </div>
+        <div class="dashboard-portal-tag mt-3 d-flex align-items-center justify-content-between">
+          <span class="badge bg-gold text-dark fw-bold"><i class="bi bi-shield-lock-fill me-1"></i> Client Portal</span>
+          <span class="small text-secondary fw-semibold">#LL-2026-89</span>
+        </div>
+      </div>
+
+      <!-- Center: Side Menu Navigation -->
+      <div class="dashboard-sidebar-body py-4">
+        <div class="sidebar-section-title text-uppercase text-muted fw-bold px-3 mb-2">Celebration Menu</div>
+        <nav class="dashboard-sidebar-nav" aria-label="Dashboard Side Menu">
+          <ul class="list-unstyled mb-0 d-flex flex-column gap-1">
+            <li>
+              <a href="dashboard.html" class="dashboard-sidebar-link">
+                <i class="bi bi-check2-square"></i>
+                <span>Planning Checklist</span>
+              </a>
+            </li>
+            <li>
+              <a href="dashboard-vendors.html" class="dashboard-sidebar-link">
+                <i class="bi bi-people"></i>
+                <span>Vendor Bookings</span>
+              </a>
+            </li>
+            <li>
+              <a href="dashboard-budget.html" class="dashboard-sidebar-link">
+                <i class="bi bi-pie-chart"></i>
+                <span>Budget Breakdown</span>
+              </a>
+            </li>
+            <li>
+              <a href="dashboard-timeline.html" class="dashboard-sidebar-link active">
+                <i class="bi bi-clock-history"></i>
+                <span>Day-Of Itinerary</span>
+              </a>
+            </li>
+            <li>
+              <a href="dashboard-payments.html" class="dashboard-sidebar-link">
+                <i class="bi bi-credit-card-2-front"></i>
+                <span>Payment Installments</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Mini Client Summary Card inside Sidebar -->
+        <div class="sidebar-client-widget mt-4 p-3 rounded-3 bg-secondary-theme border border-secondary border-opacity-10">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <img src="assets/images/portraits/portrait-2.jpg" alt="Valentina Morales" class="rounded-circle" style="width: 38px; height: 38px; object-fit: cover; border: 2px solid var(--gold-accent);">
+            <div class="overflow-hidden">
+              <strong class="d-block text-truncate small">Valentina Morales</strong>
+              <small class="text-secondary d-block text-truncate" style="font-size: 0.75rem;">Nov 14, 2026 Gala</small>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center pt-2 border-top border-secondary border-opacity-10 small">
+            <span class="text-secondary">Progress</span>
+            <span class="fw-bold text-emerald">78%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom: Utility Controls & Logout Button -->
+      <div class="dashboard-sidebar-footer pt-3 border-top border-secondary border-opacity-10">
+        <div class="d-flex align-items-center justify-content-between mb-3 px-1">
+          <span class="small text-secondary fw-semibold">Appearance</span>
+          <div class="d-flex align-items-center gap-2">
+            <button class="btn-theme-toggle" aria-label="Toggle theme" title="Toggle theme"><i class="bi bi-moon-stars-fill"></i></button>
+            <button class="btn-rtl-toggle" aria-label="Toggle RTL layout" title="Toggle RTL Support">RTL</button>
+          </div>
+        </div>
+        <a href="login.html" class="dashboard-sidebar-logout">
+          <i class="bi bi-box-arrow-right"></i>
+          <span>Logout</span>
+        </a>
+      </div>
+
+    </aside>
+
+    <!-- Sidebar Backdrop for Mobile Screens -->
+    <div class="dashboard-sidebar-backdrop" id="dashboardSidebarBackdrop"></div>
+
+    <!-- =========================================================================
+         Main Content Area (Day-Of Itinerary)
+         ========================================================================= -->
+    <main class="dashboard-main">
+      <div class="dashboard-content-body">
+        
+        <!-- Client Dashboard Header & Profile Hero -->
+        <div class="dashboard-hero-card p-4 p-lg-5 mb-5">
+          <div class="row align-items-center g-4">
+            
+            <!-- Client Avatar & Title -->
+            <div class="col-lg-7">
+              <div class="d-flex flex-column flex-sm-row align-items-sm-center gap-3 mb-3">
+                <img src="assets/images/portraits/portrait-2.jpg" alt="Valentina Morales Quinceañera Portrait" class="dashboard-client-avatar">
+                <div>
+                  <div class="d-flex align-items-center gap-2 mb-1 flex-wrap">
+                    <span class="badge bg-gold text-dark fw-bold">Private Client Portal</span>
+                    <span class="status-badge-confirmed"><i class="bi bi-shield-check"></i> Active Celebration File #LL-2026-89</span>
+                  </div>
+                  <h1 class="font-serif dashboard-hero-title mb-1">Valentina Morales & Family</h1>
+                  <p class="text-secondary mb-0 small">
+                    <i class="bi bi-gem text-gold me-1"></i> <strong>Royal Emerald Quinceañera Gala</strong> • November 14, 2026 • The Grand Venetian Ballroom, Miami
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Lead Planner Card -->
+            <div class="col-lg-5">
+              <div class="p-3 bg-surface rounded-4 border border-secondary border-opacity-10 d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="luna-brand-emblem" style="width: 44px; height: 44px; font-size: 1rem;">
+                    <i class="bi bi-person-heart"></i>
+                  </div>
+                  <div>
+                    <small class="text-muted d-block">Senior Celebration Producer</small>
+                    <strong class="d-block text-primary">Elena Rostova</strong>
+                    <small class="text-secondary">Direct: +1 (800) 586-2522 ext. 4</small>
+                  </div>
+                </div>
+                <a href="contact.html" class="btn btn-outline-secondary btn-sm rounded-pill px-3">
+                  <i class="bi bi-chat-dots me-1"></i> Message
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Key Metrics Strip -->
+          <hr class="border-secondary opacity-15 my-4">
+          <div class="row g-3 text-center text-sm-start">
+            <div class="col-6 col-md-3">
+              <small class="text-muted d-block mb-1">Countdown</small>
+              <div class="display-6 font-serif text-burgundy fw-bold">142 Days</div>
+              <small class="text-secondary">Target: Nov 14, 2026</small>
+            </div>
+            <div class="col-6 col-md-3">
+              <small class="text-muted d-block mb-1">Planning Progress</small>
+              <div class="display-6 font-serif text-emerald fw-bold" id="overallMilestoneProgress">78%</div>
+              <small class="text-secondary" id="checklistCompletedCount">14 of 18 Milestones Done</small>
+            </div>
+            <div class="col-6 col-md-3">
+              <small class="text-muted d-block mb-1">Total Approved Budget</small>
+              <div class="display-6 font-serif text-primary fw-bold">$55,000</div>
+              <small class="text-emerald">$10,750 Available</small>
+            </div>
+            <div class="col-6 col-md-3">
+              <small class="text-muted d-block mb-1">Confirmed Guests</small>
+              <div class="display-6 font-serif text-gold fw-bold">220 RSVP</div>
+              <small class="text-secondary">Capacity: 250 Max</small>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- MODULE 4: Day-Of Event Timeline & Master Itinerary -->
+        <section id="timeline">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
+            <div>
+              <div class="eyebrow-badge"><i class="bi bi-hourglass-top"></i> Gala Master Itinerary</div>
+              <h2 class="font-serif display-4 mb-1">Celebration Day-Of Timeline</h2>
+              <p class="text-secondary mb-0">Saturday, November 14, 2026 — Minute-by-minute execution schedule.</p>
+            </div>
+            <div class="d-flex gap-2">
+              <button class="btn btn-sm btn-outline-secondary rounded-pill timeline-filter-btn active" data-role="all">Master Production</button>
+              <button class="btn btn-sm btn-outline-secondary rounded-pill timeline-filter-btn" data-role="family">Family Schedule</button>
+              <button class="btn btn-sm btn-outline-secondary rounded-pill timeline-filter-btn" data-role="vendors">Vendor Load-In</button>
+            </div>
+          </div>
+
+          <!-- Chronological Timeline Points -->
+          <div class="timeline-track mt-4">
+            
+            <!-- Timeline 09:00 AM -->
+            <div class="timeline-point" data-role="family">
+              <div class="timeline-point-dot">01</div>
+              <div class="timeline-point-card">
+                <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                  <span class="badge bg-burgundy text-white px-3 py-1 rounded-pill">09:00 AM — 12:30 PM</span>
+                  <span class="badge bg-secondary-theme text-secondary"><i class="bi bi-geo-alt me-1"></i> Bridal Suite, Venetian Hotel</span>
+                </div>
+                <h4 class="font-serif mb-1">Haute Hair & Makeup Artistry Session</h4>
+                <p class="text-secondary small mb-2">Lead stylist and two assistants prep Valentina, Mother of Honor, and Head Damas. Luxury robe photo moment.</p>
+                <small class="text-muted"><i class="bi bi-person-badge me-1"></i> Coordinator on Site: Sarah Lin</small>
+              </div>
+            </div>
+
+            <!-- Timeline 01:00 PM -->
+            <div class="timeline-point" data-role="vendors">
+              <div class="timeline-point-dot">02</div>
+              <div class="timeline-point-card">
+                <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                  <span class="badge bg-gold text-dark px-3 py-1 rounded-pill">01:00 PM — 04:00 PM</span>
+                  <span class="badge bg-secondary-theme text-secondary"><i class="bi bi-geo-alt me-1"></i> Main Venetian Ballroom</span>
+                </div>
+                <h4 class="font-serif mb-1">Ballroom Load-In, Floral Rigging & Audio Test</h4>
+                <p class="text-secondary small mb-2">Botanica team installs ceiling floral canopy. Soundwave DJs sound-check intelligent moving lights and cold spark towers.</p>
+                <small class="text-muted"><i class="bi bi-person-badge me-1"></i> Producer on Site: Elena Rostova</small>
+              </div>
+            </div>
+
+            <!-- Timeline 01:30 PM -->
+            <div class="timeline-point" data-role="family">
+              <div class="timeline-point-dot">03</div>
+              <div class="timeline-point-card">
+                <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                  <span class="badge bg-burgundy text-white px-3 py-1 rounded-pill">01:30 PM — 03:00 PM</span>
+                  <span class="badge bg-secondary-theme text-secondary"><i class="bi bi-geo-alt me-1"></i> Vizcaya Gardens & Courtyard</span>
+                </div>
+                <h4 class="font-serif mb-1">Couture Formal Portrait Session & Cinema Shoot</h4>
+                <p class="text-secondary small mb-2">Valentina first look in the royal emerald gown. Family formal portraits, followed by Court of Honor group photography.</p>
+                <small class="text-muted"><i class="bi bi-camera me-1"></i> Studio Director: Mateo Rossi</small>
+              </div>
+            </div>
+
+            <!-- Timeline 03:30 PM -->
+            <div class="timeline-point" data-role="family">
+              <div class="timeline-point-dot">04</div>
+              <div class="timeline-point-card">
+                <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                  <span class="badge bg-emerald text-white px-3 py-1 rounded-pill">03:30 PM — 04:45 PM</span>
+                  <span class="badge bg-secondary-theme text-secondary"><i class="bi bi-geo-alt me-1"></i> Holy Trinity Cathedral</span>
+                </div>
+                <h4 class="font-serif mb-1">Thanksgiving Mass & Traditional Blessing Ceremony</h4>
+                <p class="text-secondary small mb-2">Traditional ceremony: blessing of the Bible, Rosary, and Tiara. Soloist soprano and string quartet.</p>
+                <small class="text-muted"><i class="bi bi-clock me-1"></i> Departure for Ballroom via Rolls Royce: 05:00 PM</small>
+              </div>
+            </div>
+
+            <!-- Timeline 05:30 PM -->
+            <div class="timeline-point" data-role="all">
+              <div class="timeline-point-dot">05</div>
+              <div class="timeline-point-card">
+                <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                  <span class="badge bg-burgundy text-white px-3 py-1 rounded-pill">05:30 PM — 06:45 PM</span>
+                  <span class="badge bg-secondary-theme text-secondary"><i class="bi bi-geo-alt me-1"></i> Ballroom Foyer & Terrace</span>
+                </div>
+                <h4 class="font-serif mb-1">Red Carpet Arrival & Signature Cocktail Hour</h4>
+                <p class="text-secondary small mb-2">220 guests welcomed with champagne, signature mocktails, and live jazz saxophonist. Photo opportunity wall open.</p>
+                <small class="text-muted"><i class="bi bi-people me-1"></i> Full Hostess Team on Floor</small>
+              </div>
+            </div>
+
+            <!-- Timeline 06:45 PM -->
+            <div class="timeline-point" data-role="family">
+              <div class="timeline-point-dot">06</div>
+              <div class="timeline-point-card">
+                <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                  <span class="badge bg-gold text-dark px-3 py-1 rounded-pill">06:45 PM — 07:30 PM</span>
+                  <span class="badge bg-secondary-theme text-secondary"><i class="bi bi-geo-alt me-1"></i> Main Venetian Ballroom</span>
+                </div>
+                <h4 class="font-serif mb-1">Grand Entrance & Official Court of Honor Waltz</h4>
+                <p class="text-secondary small mb-2">Fanfare reveal with cold spark machines. Presentation of Court, formal traditional waltz, and father's dedication toast.</p>
+                <small class="text-muted"><i class="bi bi-stars me-1"></i> Spotlight & Special Effects Cue #1</small>
+              </div>
+            </div>
+
+            <!-- Timeline 07:30 PM -->
+            <div class="timeline-point" data-role="all">
+              <div class="timeline-point-dot">07</div>
+              <div class="timeline-point-card">
+                <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                  <span class="badge bg-secondary text-white px-3 py-1 rounded-pill">07:30 PM — 08:45 PM</span>
+                  <span class="badge bg-secondary-theme text-secondary"><i class="bi bi-geo-alt me-1"></i> Grand Ballroom Banquet</span>
+                </div>
+                <h4 class="font-serif mb-1">Gourmet 3-Course Seated Dinner Service</h4>
+                <p class="text-secondary small mb-2">Filet mignon & Chilean sea bass service with vegetarian options. Slideshow celebration tribute projected on LED screens.</p>
+              </div>
+            </div>
+
+            <!-- Timeline 08:45 PM -->
+            <div class="timeline-point" data-role="family">
+              <div class="timeline-point-dot">08</div>
+              <div class="timeline-point-card">
+                <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                  <span class="badge bg-burgundy text-white px-3 py-1 rounded-pill">08:45 PM — 09:30 PM</span>
+                  <span class="badge bg-secondary-theme text-secondary"><i class="bi bi-geo-alt me-1"></i> Central Dance Floor</span>
+                </div>
+                <h4 class="font-serif mb-1">Father-Daughter Dance & Changing of Shoes (*Zapatilla*)</h4>
+                <p class="text-secondary small mb-2">Crowning ceremony by parents, changing from flats to high-heel Louboutins, and the emotional Father-Daughter slow dance.</p>
+                <small class="text-muted"><i class="bi bi-heart me-1"></i> Traditional Ceremony Cue</small>
+              </div>
+            </div>
+
+            <!-- Timeline 09:30 PM -->
+            <div class="timeline-point" data-role="all">
+              <div class="timeline-point-dot">09</div>
+              <div class="timeline-point-card">
+                <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                  <span class="badge bg-gold text-dark px-3 py-1 rounded-pill">09:30 PM — 12:00 AM</span>
+                  <span class="badge bg-secondary-theme text-secondary"><i class="bi bi-geo-alt me-1"></i> Dance Floor & VIP Lounge</span>
+                </div>
+                <h4 class="font-serif mb-1">Surprise Dance, Hora Loca Carnivale & DJ Open Floor</h4>
+                <p class="text-secondary small mb-2">Surprise hip-hop choreography by Valentina & court, followed by stilt walkers, Samba dancers, LED robots, and high-energy club set.</p>
+              </div>
+            </div>
+
+            <!-- Timeline 12:00 AM -->
+            <div class="timeline-point" data-role="all">
+              <div class="timeline-point-dot">10</div>
+              <div class="timeline-point-card">
+                <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                  <span class="badge bg-secondary text-white px-3 py-1 rounded-pill">12:00 AM — 01:00 AM</span>
+                  <span class="badge bg-secondary-theme text-secondary"><i class="bi bi-geo-alt me-1"></i> Ballroom & Exterior Gates</span>
+                </div>
+                <h4 class="font-serif mb-1">5-Tier Cake Presentation & Grand Sparkler Sendoff</h4>
+                <p class="text-secondary small mb-2">Singing of Las Mañanitas, cake cutting, midnight churro & espresso bar, concluding with a 200-sparkler driveway archway departure.</p>
+                <small class="text-muted"><i class="bi bi-shield-check me-1"></i> Event Wrap & Chauffeur Transfer: 01:15 AM</small>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Dashboard Footer Bar -->
+      <footer class="dashboard-content-footer d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 small text-secondary">
+        <div>
+          <span>© 2026 Luna & Lace Events • Private Client Portal • Valentina Morales Gala</span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="contact.html" class="text-secondary text-decoration-none">Producer Elena Rostova</a>
+          <span>•</span>
+          <a href="about.html" class="text-secondary text-decoration-none">Terms & Privacy</a>
+        </div>
+      </footer>
+    </main>
+
+  </div>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" aria-label="Scroll back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

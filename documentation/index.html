@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation — Luna & Lace Events HTML Template</title>
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23380E2D'/><polygon points='50,15 61,38 85,38 66,54 73,78 50,63 27,78 34,54 15,38 39,38' fill='%23D4AF37'/></svg>">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-primary">
+
+  <header class="py-4 border-bottom border-secondary border-opacity-10 bg-surface sticky-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="../index.html" class="luna-brand">
+        <div class="luna-brand-emblem"><i class="bi bi-stars"></i></div>
+        <div class="luna-brand-text">
+          <span class="luna-brand-title">Luna & Lace</span>
+          <span class="luna-brand-subtitle">Documentation</span>
+        </div>
+      </a>
+      <div class="d-flex align-items-center gap-3">
+        <button class="btn-theme-toggle" aria-label="Toggle theme"><i class="bi bi-moon-stars-fill"></i></button>
+        <button class="btn-rtl-toggle" aria-label="Toggle RTL layout" title="Toggle RTL Support">RTL</button>
+        <a href="../index.html" class="btn-celebration btn-celebration-sm">View Live Template</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-5">
+        
+        <!-- Sidebar Navigation -->
+        <div class="col-lg-3">
+          <div class="p-3 bg-surface rounded-4 border border-secondary border-opacity-10 sticky-top" style="top: 100px;">
+            <h6 class="text-uppercase text-muted fw-bold small mb-3">Contents</h6>
+            <nav class="nav flex-column gap-1 small">
+              <a class="nav-link text-burgundy fw-semibold" href="#intro">1. Introduction</a>
+              <a class="nav-link text-secondary" href="#structure">2. File Structure</a>
+              <a class="nav-link text-secondary" href="#theme">3. Light & Dark Themes</a>
+              <a class="nav-link text-secondary" href="#typography">4. Typography & Fonts</a>
+              <a class="nav-link text-secondary" href="#components">5. Components & Lightbox</a>
+              <a class="nav-link text-secondary" href="#forms">6. Forms & Validation</a>
+              <a class="nav-link text-secondary" href="#credits">7. Credits & Sources</a>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Documentation Body -->
+        <div class="col-lg-9">
+          
+          <!-- Intro -->
+          <section id="intro" class="mb-5 pb-4 border-bottom border-secondary border-opacity-10">
+            <h1 class="display-3 font-serif text-burgundy mb-3">Luna & Lace Events Documentation</h1>
+            <p class="lead text-secondary">
+              Thank you for purchasing <strong>Luna & Lace Events</strong>, a premium multi-page celebration planning and event design studio HTML5 template. Crafted specifically for Quinceañeras, Sweet Sixteens, and milestone galas.
+            </p>
+            <div class="p-4 bg-secondary-theme rounded-4 border border-secondary border-opacity-10">
+              <h5 class="font-serif mb-2">Key Highlights</h5>
+              <ul class="mb-0 small text-secondary">
+                <li>Built with clean HTML5, Bootstrap 5.3, CSS3, Vanilla JS, and GSAP 3.</li>
+                <li>Zero React, Vue, or heavy dependencies required. Fully standalone.</li>
+                <li>Instant Light & Dark theme toggle with <code>localStorage</code> persistence.</li>
+                <li>Filterable masonry portfolio with full-screen keyboard-navigable Lightbox.</li>
+                <li>Fully responsive across mobile, tablet, desktop, and large displays.</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Structure -->
+          <section id="structure" class="mb-5 pb-4 border-bottom border-secondary border-opacity-10">
+            <h2 class="display-4 font-serif mb-3">2. File & Directory Structure</h2>
+            <pre class="p-4 bg-dark text-white rounded-4 small"><code>luna-lace-events/
+├── index.html                  # Home (Classic Luxury)
+├── home-2.html                # Home 2 (Fashion Editorial & Production)
+├── celebrations.html          # Celebrations Directory
+├── quinceaneras.html          # Dedicated Quinceañera Guide
+├── sweet-sixteens.html        # Dedicated Sweet Sixteen Guide
+├── milestone-birthdays.html   # 16th, 18th, 21st & Custom Milestones
+├── themed-celebrations.html   # 8 Thematic Scenography Concepts
+├── celebration-details.html   # Reusable Event Case Study Template
+├── packages.html              # Planning Packages Comparison Matrix
+├── package-details.html       # Package In-Depth Breakdown
+├── portfolio.html             # Masonry Gallery with Lightbox
+├── portfolio-details.html     # Editorial Case Study Page
+├── vendors.html               # Vendor Partner Ecosystem
+├── vendor-details.html        # Vendor Category Guide
+├── about.html                 # Studio Story, Philosophy & Team
+├── contact.html               # Celebration Inquiry Form with Validation
+├── dashboard.html             # Client Portal: Planning Checklist
+├── dashboard-vendors.html     # Client Portal: Vendor Bookings
+├── dashboard-budget.html      # Client Portal: Budget Breakdown
+├── dashboard-timeline.html    # Client Portal: Day-Of Itinerary
+├── dashboard-payments.html    # Client Portal: Payment Installments
+├── login.html                 # Front-End Auth Demo (No Dashboard)
+├── signup.html                # Client Registration Demo (No Dashboard)
+├── forgot-password.html       # Password Reset Demo
+├── 404.html                   # Celebration 404 Error Page
+├── coming-soon.html           # Live Ticking Countdown Page
+├── documentation/
+│   └── index.html             # Documentation Guide
+├── README.md
+└── assets/
+    ├── css/
+    │   ├── bootstrap.min.css
+    │   ├── bootstrap-icons.min.css
+    │   └── style.css          # Design System, Themes & Custom Styles
+    ├── js/
+    │   ├── bootstrap.bundle.min.js
+    │   ├── gsap.min.js
+    │   └── main.js            # Theme Toggle, Lightbox, Filter, Form Logic
+    └── images/                # Organized by category</code></pre>
+          </section>
+
+          <!-- Theme -->
+          <section id="theme" class="mb-5 pb-4 border-bottom border-secondary border-opacity-10">
+            <h2 class="display-4 font-serif mb-3">3. Light & Dark Themes</h2>
+            <p class="text-secondary">
+              Theme switching is driven by the <code>data-bs-theme</code> attribute on the root <code>&lt;html&gt;</code> element. The state is remembered in the visitor's browser using <code>localStorage.setItem('luna_lace_theme', 'dark')</code>.
+            </p>
+            <p class="text-secondary">
+              All theme colors are governed by CSS Custom Properties in <code>assets/css/style.css</code>:
+            </p>
+            <div class="row g-3 small">
+              <div class="col-md-6">
+                <div class="p-3 bg-surface rounded-3 border">
+                  <strong>Light Theme Tokens:</strong><br>
+                  <code>--bg-primary: #FCF9F5;</code><br>
+                  <code>--plum-primary: #380E2D;</code><br>
+                  <code>--burgundy: #6E182F;</code><br>
+                  <code>--gold-accent: #C5A059;</code>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 bg-surface rounded-3 border">
+                  <strong>Dark Theme Tokens:</strong><br>
+                  <code>--bg-primary: #120914;</code><br>
+                  <code>--bg-surface: #241429;</code><br>
+                  <code>--gold-bright: #F5D992;</code><br>
+                  <code>--text-primary: #FAF4FA;</code>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Typography -->
+          <section id="typography" class="mb-5 pb-4 border-bottom border-secondary border-opacity-10">
+            <h2 class="display-4 font-serif mb-3">4. Typography & Google Fonts</h2>
+            <p class="text-secondary">
+              The template imports two high-fashion Google Font families:
+            </p>
+            <ul>
+              <li><strong>Cormorant Garamond:</strong> Headings, display banners, and editorial quotes.</li>
+              <li><strong>Plus Jakarta Sans & Outfit:</strong> Body copy, navigation, buttons, and form labels.</li>
+            </ul>
+          </section>
+
+          <!-- Components -->
+          <section id="components" class="mb-5 pb-4 border-bottom border-secondary border-opacity-10">
+            <h2 class="display-4 font-serif mb-3">5. Components & Lightbox</h2>
+            <p class="text-secondary">
+              The portfolio gallery includes dynamic vanilla JavaScript filtering and a lightbox modal. Add <code>class="open-lightbox"</code> and <code>data-caption="..."</code> to any link or button to launch the full-screen view. Pressing the <kbd>Escape</kbd> key or clicking outside will dismiss it automatically.
+            </p>
+          </section>
+
+          <!-- Forms -->
+          <section id="forms" class="mb-5 pb-4 border-bottom border-secondary border-opacity-10">
+            <h2 class="display-4 font-serif mb-3">6. Forms & Validation</h2>
+            <p class="text-secondary">
+              All forms utilize Bootstrap's native HTML5 constraint validation (<code>class="needs-validation"</code>). The Contact form on <code>contact.html</code> dynamically presents a celebration confirmation card upon completion.
+            </p>
+            <div class="alert alert-warning small">
+              <strong>Notice:</strong> As specified, this template is pure front-end HTML/CSS/JS. Forms contain client-side validation demonstrations and do not connect to a live backend database or dashboard portal.
+            </div>
+          </section>
+
+          <!-- Credits -->
+          <section id="credits">
+            <h2 class="display-4 font-serif mb-3">7. Credits & Sources</h2>
+            <ul class="text-secondary small">
+              <li>Bootstrap 5.3.3 (<a href="https://getbootstrap.com" target="_blank">getbootstrap.com</a>)</li>
+              <li>Bootstrap Icons 1.11.3 (<a href="https://icons.getbootstrap.com" target="_blank">icons.getbootstrap.com</a>)</li>
+              <li>GSAP 3.12.5 (<a href="https://greensock.com/gsap" target="_blank">greensock.com</a>)</li>
+              <li>Google Fonts: Cormorant Garamond, Plus Jakarta Sans, Outfit</li>
+              <li>Unsplash Photography: Curated royalty-free celebration images</li>
+            </ul>
+          </section>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-4 border-top border-secondary border-opacity-10 bg-surface text-center small text-muted">
+    <div class="container">
+      <p class="mb-0">© 2026 Luna & Lace Events. Premium HTML Template Documentation.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celebration Portfolio & Gallery — Luna & Lace Events</title>
+  <meta name="description" content="Browse our luxury Quinceañera, Sweet Sixteen, and milestone event portfolio. Masonry gallery featuring decor, portraits, dance floors, and ballroom styling.">
+  <meta name="keywords" content="quinceanera portfolio, sweet sixteen gallery, event decor photos, ballroom design gallery, celebration lightbox">
+  
+  <meta property="og:title" content="Celebration Portfolio & Gallery — Luna & Lace Events">
+  <meta property="og:description" content="Explore our visual lookbook of bespoke milestone celebrations.">
+  <meta property="og:image" content="assets/images/quinceanera/quince-emerald.jpg">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23380E2D'/><polygon points='50,15 61,38 85,38 66,54 73,78 50,63 27,78 34,54 15,38 39,38' fill='%23D4AF37'/></svg>">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <header class="luna-navbar d-flex align-items-center">
+    <div class="container-fluid px-lg-5 d-flex align-items-center justify-content-between">
+      <a href="index.html" class="luna-brand">
+        <div class="luna-brand-emblem"><i class="bi bi-stars"></i></div>
+        <div class="luna-brand-text">
+          <span class="luna-brand-title">Luna & Lace</span>
+          <span class="luna-brand-subtitle">Events</span>
+        </div>
+      </a>
+
+      <nav class="d-none d-xl-flex align-items-center gap-1" aria-label="Main Navigation">
+        <ul class="navbar-nav flex-row align-items-center gap-1 list-unstyled mb-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu luna-dropdown-menu">
+              <li><a class="dropdown-item" href="index.html"><i class="bi bi-house-heart"></i> Home (Classic Luxury)</a></li>
+              <li><a class="dropdown-item" href="home-2.html"><i class="bi bi-camera-reels"></i> Home 2 (Fashion Editorial)</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="celebrations.html">Celebrations</a></li>
+          <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+          <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="vendors.html">Vendors</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <div class="d-flex align-items-center gap-2 gap-sm-3">
+        <button class="btn-theme-toggle d-none d-xl-inline-flex" aria-label="Toggle theme"><i class="bi bi-moon-stars-fill"></i></button>
+        <button class="btn-rtl-toggle d-none d-xl-inline-flex" aria-label="Toggle RTL layout" title="Toggle RTL Support">RTL</button>
+        <a href="signup.html" class="btn-celebration d-none d-xl-inline-flex">
+          <span>Sign Up</span> <i class="bi bi-arrow-right"></i>
+        </a>
+        <button class="navbar-toggler d-xl-none border-0 p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#lunaMobileNav">
+          <i class="bi bi-list fs-1 text-primary"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="offcanvas offcanvas-end mobile-offcanvas" tabindex="-1" id="lunaMobileNav">
+    <div class="offcanvas-header border-bottom border-secondary border-opacity-10 py-3">
+      <div class="luna-brand">
+        <div class="luna-brand-emblem"><i class="bi bi-stars"></i></div>
+        <div class="luna-brand-text">
+          <span class="luna-brand-title fs-5">Luna & Lace</span>
+          <span class="luna-brand-subtitle">Events</span>
+        </div>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+      <div class="mobile-nav-list">
+        <div class="mb-2">
+          <a class="nav-link fw-bold d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+            href="#mobileHomeMenuPort">
+            <span>Home</span> <i class="bi bi-chevron-down small"></i>
+          </a>
+          <div class="collapse show" id="mobileHomeMenuPort">
+            <ul class="list-unstyled ps-3 pt-2">
+              <li class="mb-2"><a href="index.html" class="text-decoration-none text-secondary">Home (Classic Luxury)</a></li>
+              <li class="mb-2"><a href="home-2.html" class="text-decoration-none text-secondary">Home 2 (Fashion Editorial)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-2"><a href="celebrations.html" class="nav-link fw-bold">Celebrations</a></div>
+        <div class="mb-2"><a href="packages.html" class="nav-link fw-bold">Packages</a></div>
+        <div class="mb-2"><a href="portfolio.html" class="nav-link fw-bold text-gold">Portfolio</a></div>
+        <div class="mb-2"><a href="vendors.html" class="nav-link fw-bold">Vendors</a></div>
+        <div class="mb-2"><a href="about.html" class="nav-link fw-bold">About</a></div>
+        <div class="mb-2"><a href="contact.html" class="nav-link fw-bold">Contact</a></div>
+        <div class="mb-2"><a href="dashboard.html" class="nav-link fw-bold">Dashboard</a></div>
+      </div>
+      <div class="pt-4 border-top border-secondary border-opacity-10">
+        <div class="d-flex align-items-center justify-content-between gap-2 mb-3">
+          <span class="text-secondary small fw-bold text-uppercase letter-spacing-1">Mode & Language</span>
+          <div class="d-flex align-items-center gap-2">
+            <button class="btn-theme-toggle" aria-label="Toggle light or dark theme" title="Toggle theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <button class="btn-rtl-toggle" aria-label="Toggle RTL layout" title="Toggle RTL Support">RTL</button>
+          </div>
+        </div>
+        <a href="signup.html" class="btn-celebration w-100"><span>Sign Up</span> <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Header -->
+  <section class="section-padding bg-secondary-theme text-center">
+    <div class="container max-w-800 mx-auto">
+      <div class="eyebrow-badge"><i class="bi bi-camera"></i> Editorial Lookbook</div>
+      <h1 class="display-2 font-serif mb-3">Celebration Portfolio</h1>
+      <p class="lead text-secondary mb-0">
+        Explore moments from our signature celebrations. Filter through Quinceañeras, Sweet Sixteens, bespoke decor installations, and energetic dance floor scenes.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filter & Masonry Gallery -->
+  <section class="section-padding">
+    <div class="container">
+      
+      <!-- Filter Bar -->
+      <div class="portfolio-filter-bar">
+        <button class="portfolio-filter-btn active" data-filter="*">All Moments</button>
+        <button class="portfolio-filter-btn" data-filter=".quinceaneras">Quinceañeras</button>
+        <button class="portfolio-filter-btn" data-filter=".sweet-sixteens">Sweet Sixteens</button>
+        <button class="portfolio-filter-btn" data-filter=".decor">Decor</button>
+        <button class="portfolio-filter-btn" data-filter=".venues">Venues</button>
+        <button class="portfolio-filter-btn" data-filter=".portraits">Portraits</button>
+        <button class="portfolio-filter-btn" data-filter=".details">Details</button>
+        <button class="portfolio-filter-btn" data-filter=".dance-floor">Dance Floor</button>
+      </div>
+
+      <!-- Masonry Grid with 12 Curated Items -->
+      <div class="masonry-grid">
+        
+        <!-- 1 -->
+        <div class="portfolio-item quinceaneras portraits">
+          <img src="assets/images/quinceanera/quince-emerald.jpg" alt="Valeria's Royal Emerald Quinceañera">
+          <div class="portfolio-overlay">
+            <div class="portfolio-overlay-content">
+              <span class="portfolio-overlay-category">Quinceañera • Portrait</span>
+              <h4 class="portfolio-overlay-title">Valeria's Royal Coronation</h4>
+              <div class="portfolio-actions">
+                <a href="assets/images/quinceanera/quince-emerald.jpg" class="open-lightbox btn-celebration btn-celebration-sm" data-caption="Valeria's Royal Emerald Quinceañera at The Biltmore Ballroom">
+                  <i class="bi bi-arrows-fullscreen"></i> <span>Expand</span>
+                </a>
+                <a href="portfolio-details.html" class="btn-celebration-outline btn-celebration-sm text-white border-white"><span>Case Study</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="portfolio-item sweet-sixteens dance-floor">
+          <img src="assets/images/sweet-sixteen/sweet16-dance.jpg" alt="Cold-Spark Celebration Dance">
+          <div class="portfolio-overlay">
+            <div class="portfolio-overlay-content">
+              <span class="portfolio-overlay-category">Sweet Sixteen • Dance Floor</span>
+              <h4 class="portfolio-overlay-title">Midnight Glow & Cold Sparks</h4>
+              <div class="portfolio-actions">
+                <a href="assets/images/sweet-sixteen/sweet16-dance.jpg" class="open-lightbox btn-celebration btn-celebration-sm" data-caption="Concert-grade sound & pyrotechnic spark fountains">
+                  <i class="bi bi-arrows-fullscreen"></i> <span>Expand</span>
+                </a>
+                <a href="portfolio-details.html" class="btn-celebration-outline btn-celebration-sm text-white border-white"><span>Case Study</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="portfolio-item decor">
+          <img src="assets/images/decor/decor-arch.jpg" alt="Cascading Garden Floral Arch">
+          <div class="portfolio-overlay">
+            <div class="portfolio-overlay-content">
+              <span class="portfolio-overlay-category">Decor • Florals</span>
+              <h4 class="portfolio-overlay-title">Cascading Rose Archway</h4>
+              <div class="portfolio-actions">
+                <a href="assets/images/decor/decor-arch.jpg" class="open-lightbox btn-celebration btn-celebration-sm" data-caption="Handcrafted archway featuring 900+ English garden roses">
+                  <i class="bi bi-arrows-fullscreen"></i> <span>Expand</span>
+                </a>
+                <a href="portfolio-details.html" class="btn-celebration-outline btn-celebration-sm text-white border-white"><span>Case Study</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="portfolio-item venues">
+          <img src="assets/images/venues/venue-ballroom.jpg" alt="Grand Chandelier Ballroom">
+          <div class="portfolio-overlay">
+            <div class="portfolio-overlay-content">
+              <span class="portfolio-overlay-category">Venues • Ballroom</span>
+              <h4 class="portfolio-overlay-title">The Biltmore Crystal Ballroom</h4>
+              <div class="portfolio-actions">
+                <a href="assets/images/venues/venue-ballroom.jpg" class="open-lightbox btn-celebration btn-celebration-sm" data-caption="Regal crystal chandeliers and gilded architecture">
+                  <i class="bi bi-arrows-fullscreen"></i> <span>Expand</span>
+                </a>
+                <a href="portfolio-details.html" class="btn-celebration-outline btn-celebration-sm text-white border-white"><span>Case Study</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="portfolio-item sweet-sixteens portraits">
+          <img src="assets/images/sweet-sixteen/sweet16-fashion.jpg" alt="Sweet 16 Couture Reveal">
+          <div class="portfolio-overlay">
+            <div class="portfolio-overlay-content">
+              <span class="portfolio-overlay-category">Sweet Sixteen • Fashion</span>
+              <h4 class="portfolio-overlay-title">Camila's Runway Entrance</h4>
+              <div class="portfolio-actions">
+                <a href="assets/images/sweet-sixteen/sweet16-fashion.jpg" class="open-lightbox btn-celebration btn-celebration-sm" data-caption="Bespoke blush couture gown and tiara styling">
+                  <i class="bi bi-arrows-fullscreen"></i> <span>Expand</span>
+                </a>
+                <a href="portfolio-details.html" class="btn-celebration-outline btn-celebration-sm text-white border-white"><span>Case Study</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="portfolio-item quinceaneras dance-floor">
+          <img src="assets/images/quinceanera/quince-waltz.jpg" alt="Court of Honor Waltz">
+          <div class="portfolio-overlay">
+            <div class="portfolio-overlay-content">
+              <span class="portfolio-overlay-category">Quinceañera • Dance Floor</span>
+              <h4 class="portfolio-overlay-title">The Grand Court Waltz</h4>
+              <div class="portfolio-actions">
+                <a href="assets/images/quinceanera/quince-waltz.jpg" class="open-lightbox btn-celebration btn-celebration-sm" data-caption="Choreographed waltz with 14 court members">
+                  <i class="bi bi-arrows-fullscreen"></i> <span>Expand</span>
+                </a>
+                <a href="portfolio-details.html" class="btn-celebration-outline btn-celebration-sm text-white border-white"><span>Case Study</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="portfolio-item details decor">
+          <img src="assets/images/tablescapes/table-luxe.jpg" alt="Luxury Charger Plate Place Setting">
+          <div class="portfolio-overlay">
+            <div class="portfolio-overlay-content">
+              <span class="portfolio-overlay-category">Details • Tablescape</span>
+              <h4 class="portfolio-overlay-title">Gold Filigree Place Setting</h4>
+              <div class="portfolio-actions">
+                <a href="assets/images/tablescapes/table-luxe.jpg" class="open-lightbox btn-celebration btn-celebration-sm" data-caption="Gold-rimmed crystal glassware and velvet runners">
+                  <i class="bi bi-arrows-fullscreen"></i> <span>Expand</span>
+                </a>
+                <a href="portfolio-details.html" class="btn-celebration-outline btn-celebration-sm text-white border-white"><span>Case Study</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="portfolio-item details">
+          <img src="assets/images/cakes/cake-5tier.jpg" alt="5-Tier Couture Celebration Cake">
+          <div class="portfolio-overlay">
+            <div class="portfolio-overlay-content">
+              <span class="portfolio-overlay-category">Details • Confection</span>
+              <h4 class="portfolio-overlay-title">5-Tier Gold Leaf Cake</h4>
+              <div class="portfolio-actions">
+                <a href="assets/images/cakes/cake-5tier.jpg" class="open-lightbox btn-celebration btn-celebration-sm" data-caption="Sculpted sugar flowers and 24k edible gold accents">
+                  <i class="bi bi-arrows-fullscreen"></i> <span>Expand</span>
+                </a>
+                <a href="portfolio-details.html" class="btn-celebration-outline btn-celebration-sm text-white border-white"><span>Case Study</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="portfolio-item decor venues">
+          <img src="assets/images/decor/decor-stage.jpg" alt="Enchanted Garden Stage">
+          <div class="portfolio-overlay">
+            <div class="portfolio-overlay-content">
+              <span class="portfolio-overlay-category">Decor • Stagecraft</span>
+              <h4 class="portfolio-overlay-title">Enchanted Living Green Stage</h4>
+              <div class="portfolio-actions">
+                <a href="assets/images/decor/decor-stage.jpg" class="open-lightbox btn-celebration btn-celebration-sm" data-caption="Botanical stage transformation with illuminated custom monogram">
+                  <i class="bi bi-arrows-fullscreen"></i> <span>Expand</span>
+                </a>
+                <a href="portfolio-details.html" class="btn-celebration-outline btn-celebration-sm text-white border-white"><span>Case Study</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="portfolio-item venues">
+          <img src="assets/images/venues/venue-glasshouse.jpg" alt="Glasshouse Conservatory Pavilion">
+          <div class="portfolio-overlay">
+            <div class="portfolio-overlay-content">
+              <span class="portfolio-overlay-category">Venues • Glasshouse</span>
+              <h4 class="portfolio-overlay-title">The Conservatory Pavilion</h4>
+              <div class="portfolio-actions">
+                <a href="assets/images/venues/venue-glasshouse.jpg" class="open-lightbox btn-celebration btn-celebration-sm" data-caption="Floor-to-ceiling glass architecture under twilight stars">
+                  <i class="bi bi-arrows-fullscreen"></i> <span>Expand</span>
+                </a>
+                <a href="portfolio-details.html" class="btn-celebration-outline btn-celebration-sm text-white border-white"><span>Case Study</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="portfolio-item sweet-sixteens decor">
+          <img src="assets/images/sweet-sixteen/sweet16-entrance.jpg" alt="Sweet 16 Balloon & Floral Entrance">
+          <div class="portfolio-overlay">
+            <div class="portfolio-overlay-content">
+              <span class="portfolio-overlay-category">Sweet Sixteen • Entrance</span>
+              <h4 class="portfolio-overlay-title">Grand Arrival Installation</h4>
+              <div class="portfolio-actions">
+                <a href="assets/images/sweet-sixteen/sweet16-entrance.jpg" class="open-lightbox btn-celebration btn-celebration-sm" data-caption="Organic balloon garland and floral arrival tunnel">
+                  <i class="bi bi-arrows-fullscreen"></i> <span>Expand</span>
+                </a>
+                <a href="portfolio-details.html" class="btn-celebration-outline btn-celebration-sm text-white border-white"><span>Case Study</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="portfolio-item dance-floor">
+          <img src="assets/images/dance/dance-party.jpg" alt="Dance Party with Glow Batons">
+          <div class="portfolio-overlay">
+            <div class="portfolio-overlay-content">
+              <span class="portfolio-overlay-category">Dance Floor • Atmosphere</span>
+              <h4 class="portfolio-overlay-title">Midnight Glow Finale</h4>
+              <div class="portfolio-actions">
+                <a href="assets/images/dance/dance-party.jpg" class="open-lightbox btn-celebration btn-celebration-sm" data-caption="Packed dance floor with synchronized LED wristbands">
+                  <i class="bi bi-arrows-fullscreen"></i> <span>Expand</span>
+                </a>
+                <a href="portfolio-details.html" class="btn-celebration-outline btn-celebration-sm text-white border-white"><span>Case Study</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-5">
+        <small class="text-muted fst-italic">Note: All images, events, and captions represent template demonstration case studies.</small>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="section-padding bg-dark-accent text-white text-center">
+    <div class="container max-w-700 mx-auto">
+      <h2 class="display-3 font-serif text-white mb-3">Ready to Be Featured in Our Lookbook?</h2>
+      <p class="lead text-white-50 mb-4">Let’s begin designing the colors, floral arches, and staging for her milestone celebration.</p>
+      <a href="contact.html" class="btn-celebration btn-celebration-gold btn-celebration-lg">
+        <span>Plan Your Celebration</span> <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="luna-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="luna-brand mb-3">
+            <div class="luna-brand-emblem"><i class="bi bi-stars"></i></div>
+            <div class="luna-brand-text">
+              <span class="luna-brand-title footer-brand-title">Luna & Lace</span>
+              <span class="luna-brand-subtitle">Events</span>
+            </div>
+          </div>
+          <p class="text-white-50 pe-lg-4 mb-4">
+            Bespoke Quinceañera and Sweet Sixteen event planning, decor production, and timeline management. “Make the Moment Unforgettable.”
+          </p>
+          <div class="d-flex align-items-center">
+            <a href="contact.html" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-heading">Celebrations</h4>
+          <ul class="footer-links">
+            <li><a href="quinceaneras.html">Quinceañeras</a></li>
+            <li><a href="sweet-sixteens.html">Sweet Sixteens</a></li>
+            <li><a href="milestone-birthdays.html">Milestone Birthdays</a></li>
+            <li><a href="themed-celebrations.html">Themed Celebrations</a></li>
+            <li><a href="celebration-details.html">Celebration Details</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Explore Studio</h4>
+          <ul class="footer-links">
+            <li><a href="packages.html">Planning Packages</a></li>
+            <li><a href="package-details.html">Package Breakdown</a></li>
+            <li><a href="portfolio.html">Gallery & Case Studies</a></li>
+            <li><a href="vendors.html">Vendor Network</a></li>
+            <li><a href="about.html">About Luna & Lace</a></li>
+            <li><a href="dashboard.html">Client Dashboard</a></li>
+            <li><a href="coming-soon.html">VIP Gala Showcase</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Studio Inquiries</h4>
+          <p class="text-white-50 mb-2 small"><i class="bi bi-geo-alt-fill text-gold me-2"></i> 450 Celebration Blvd, Suite 800</p>
+          <p class="text-white-50 mb-2 small"><i class="bi bi-envelope-fill text-gold me-2"></i> hello@lunaandlaceevents.com</p>
+          <p class="text-white-50 mb-3 small"><i class="bi bi-telephone-fill text-gold me-2"></i> +1 (800) 586-2522</p>
+          <p class="text-white-50 small mb-0">
+            <strong>Studio Hours:</strong><br>
+            Monday – Saturday: 9:00 AM – 7:00 PM<br>
+            Sunday: By Consultation Appointment
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="mb-0">© 2026 Luna & Lace Events. All rights reserved.</p>
+        <div class="d-flex gap-3 small">
+          <a href="about.html" class="text-white-50 text-decoration-none">Privacy Policy</a>
+          <span>•</span>
+          <a href="about.html" class="text-white-50 text-decoration-none">Terms of Service</a>
+          <span>•</span>
+          <a href="about.html" class="text-white-50 text-decoration-none">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lunaLightboxModal" class="luna-lightbox-modal" role="dialog" aria-modal="true" aria-label="Celebration Image Lightbox">
+    <button id="lightboxCloseBtn" class="luna-lightbox-close" aria-label="Close Lightbox">&times;</button>
+    <div class="luna-lightbox-content">
+      <img id="lightboxImage" src="" alt="Celebration Fullscreen Preview">
+      <div id="lightboxCaption" class="luna-lightbox-caption"></div>
+    </div>
+    <button id="lightboxPrevBtn" class="position-absolute start-0 ms-4 btn btn-link text-white fs-1 p-0 border-0" aria-label="Previous Image">
+      <i class="bi bi-chevron-left"></i>
+    </button>
+    <button id="lightboxNextBtn" class="position-absolute end-0 me-4 btn btn-link text-white fs-1 p-0 border-0" aria-label="Next Image">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+  </div>
+
+  <button class="back-to-top" aria-label="Scroll back to top"><i class="bi bi-chevron-up"></i></button>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
