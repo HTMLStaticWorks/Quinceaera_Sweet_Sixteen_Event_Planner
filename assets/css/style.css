@@ -120,7 +120,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
@@ -132,7 +132,7 @@ body {
   line-height: 1.65;
   letter-spacing: -0.01em;
   transition: background-color var(--transition-normal), color var(--transition-normal);
-  overflow-x: hidden;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -2095,6 +2095,54 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   box-shadow: var(--shadow-sm);
 }
 
+/* Vendor Booking Cards Baseline Alignment */
+.vendor-status-card .vendor-card-header {
+  min-height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.vendor-status-card .vendor-card-title {
+  font-size: 1.15rem;
+  line-height: 1.35;
+  min-height: 2.7rem;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.35rem;
+}
+
+.vendor-status-card .vendor-card-subtext {
+  min-height: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Payment Installment Cards Baseline Alignment */
+.installment-card-header {
+  min-height: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.installment-card-title {
+  font-size: 1.25rem;
+  line-height: 1.35;
+  min-height: 2.85rem;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.35rem;
+}
+
+.installment-card-subtext {
+  min-height: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
 /* Status Badges */
 .status-badge-confirmed {
   background: rgba(13, 82, 72, 0.12);
@@ -2195,6 +2243,30 @@ body.auth-page {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
 }
 
+/* Authentication Page Headings vs Brand Size */
+.auth-page .luna-brand-title {
+  font-size: 1.55rem !important;
+  font-weight: 700;
+}
+
+.auth-page .auth-card-title,
+.auth-page .form-card h2.auth-card-title,
+.auth-page .form-card h2 {
+  font-size: 1.35rem !important;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+/* Single line text for auth switch on all screens and mobile */
+.auth-switch-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
 @media (max-width: 575.98px) {
   body.auth-page {
     padding: 0 !important;
@@ -2205,8 +2277,34 @@ body.auth-page {
   }
   
   .auth-page .form-card {
-    padding: 1.75rem 1.25rem;
+    padding: 1.75rem 1.15rem;
     border-radius: var(--border-radius-md);
+  }
+
+  .auth-switch-text {
+    font-size: 0.825rem;
+    white-space: nowrap !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.25rem !important;
+  }
+
+  .auth-switch-text span,
+  .auth-switch-text a {
+    white-space: nowrap !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .auth-page .form-card {
+    padding: 1.5rem 0.85rem !important;
+  }
+
+  .auth-switch-text {
+    font-size: 0.75rem !important;
+    letter-spacing: -0.015em;
   }
 }
 
